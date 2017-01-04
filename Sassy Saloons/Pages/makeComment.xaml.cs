@@ -22,12 +22,20 @@ namespace Sassy_Saloons.Pages
     /// </summary>
     public sealed partial class makeComment : Page
     {        
-        internal static int upins;
-
+        
         public makeComment()
         {
-            this.InitializeComponent();            
-            upins = 0;
-        }        
+            this.InitializeComponent();                                    
+        }
+        
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(salComment));
+        }
+
+        private void makeCommentButton_Click(object sender, RoutedEventArgs e)
+        {
+                        
+        }
     }
 }

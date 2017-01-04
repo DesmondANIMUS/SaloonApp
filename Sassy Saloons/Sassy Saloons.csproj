@@ -103,8 +103,10 @@
     <Compile Include="Managers\CommentCall.cs" />
     <Compile Include="Managers\CommonCall.cs" />
     <Compile Include="Managers\CommonGettingUsersCall.cs" />
+    <Compile Include="Managers\SearchCall.cs" />
     <Compile Include="Models\CommentsResponse.cs" />
     <Compile Include="Models\CommonResponse.cs" />
+    <Compile Include="Models\SaloonResponse.cs" />
     <Compile Include="Pages\commonRegister.xaml.cs">
       <DependentUpon>commonRegister.xaml</DependentUpon>
     </Compile>

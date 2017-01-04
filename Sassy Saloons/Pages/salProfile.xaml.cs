@@ -30,13 +30,14 @@ namespace Sassy_Saloons.Pages
                 
         public salProfile()
         {
-            this.InitializeComponent();        
+            this.InitializeComponent();
+            data = new CommonUserResponse();
         }
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             try
-            {                   
+            {                
                 data = await CommonGettingUsersCall.GetUserInfo(log);
 
                 NameBlock.Text = data.SalonName;
@@ -63,6 +64,11 @@ namespace Sassy_Saloons.Pages
         private void commentButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(salComment));
+        }
+
+        private void searchButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(salSearch));
         }
     }
 }

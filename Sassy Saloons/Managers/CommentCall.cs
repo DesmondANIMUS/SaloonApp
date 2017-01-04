@@ -21,23 +21,16 @@ namespace Sassy_Saloons.Managers
 
             switch(com.Upins)
             {
-                case 0:
+                case false:
                     parameters = new FormUrlEncodedContent(new[] { new KeyValuePair<string, string>("sname", com.Salonname) });
                     URI = Constants.GETCOM;
                     break;
-                case 1:
+                case true:
                     parameters = new FormUrlEncodedContent(new[] { new KeyValuePair<string, string>("sname", com.Salonname),
                                                                    new KeyValuePair<string, string>("user", com.Username),
                                                                    new KeyValuePair<string, string>("comment", com.Comment),
                                                                    new KeyValuePair<string, string>("star", com.Star) });
                     URI = Constants.INCOM;
-                    break;
-                case 2:
-                    parameters = new FormUrlEncodedContent(new[] { new KeyValuePair<string, string>("sname", com.Salonname),
-                                                                   new KeyValuePair<string, string>("user", com.Username),
-                                                                   new KeyValuePair<string, string>("comment", com.Comment),
-                                                                   new KeyValuePair<string, string>("star", com.Star) });
-                    URI = Constants.UPCOM;
                     break;
             }
 
@@ -53,6 +46,7 @@ namespace Sassy_Saloons.Managers
         
         internal static async Task GetCommentsAsync(CommentInfo com, ObservableCollection<Response> allcom)
         {
+            allcom.Clear();
             var datawrapper = await GetWrapperAsync(com);
             var getdata = datawrapper.response;            
 

@@ -15,23 +15,23 @@
         private const string salcom                 = baseUrl + "salComment";
         private const string reguse                 = baseUrl + "regUser";
         private const string login                  = baseUrl + "login";
-        private const string incom                  = baseUrl + "salComment";
-        private const string upcom                  = baseUrl + "updateComments";
+        private const string incom                  = baseUrl + "salComment";        
 
         internal const string SALREG                = salreg;
         internal const string SALCOM                = salcom;
         internal const string REGUSE                = reguse;
         internal const string LOGIN                 = login;
-        internal const string INCOM                 = incom;
-        internal const string UPCOM                 = upcom;
+        internal const string INCOM                 = incom;        
         #endregion
 
         #region Get them
         private const string getuser                = baseUrl + "getUser";
         private const string getcom                 = baseUrl + "getComments";
+        private const string getsal                 = baseUrl + "searchSaloon";
 
         internal const string GETUSER               = getuser;
         internal const string GETCOM                = getcom;
+        internal const string GETSAL                = getsal;
         #endregion                
 
         #region Encryption

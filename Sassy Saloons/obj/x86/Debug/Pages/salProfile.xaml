@@ -58,11 +58,16 @@
 
         <Button x:ConnectionId='7' x:Name="moreButton" Style="{StaticResource buttonStyle}"
                 Grid.Row="2" Background="Teal" Foreground="White"
-                Content=""                         />
+                Content=""                         
+                Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
 
         <Button x:ConnectionId='8' x:Name="commentButton" Style="{StaticResource buttonStyle}"
-                Grid.Row="2" Grid.Column="1"
+                Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right"
                 Content=""                            />
+
+        <Button x:ConnectionId='9' x:Name="searchButton" Style="{StaticResource buttonStyle}"
+                Grid.Row="2" HorizontalAlignment="Left"
+                Content=""                           />
 
     </Grid>
 </Page>

@@ -62,7 +62,7 @@
         <Button x:ConnectionId='8' x:Name="SaloonSearchBut"  Grid.Column="1"
                 Style="{StaticResource buttonStyle}" 
                 Grid.Row="3" Content="" VerticalAlignment="Stretch"
-                Background="Silver"/>
+                Background="Silver"                              />
 
     </Grid>
 </Page>

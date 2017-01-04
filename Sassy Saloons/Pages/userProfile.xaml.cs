@@ -41,5 +41,10 @@ namespace Sassy_Saloons.Pages
 
             log = (LoginInfo)e.Parameter;
         }
+
+        private void SaloonSearchBut_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(salSearch));
+        }
     }
 }

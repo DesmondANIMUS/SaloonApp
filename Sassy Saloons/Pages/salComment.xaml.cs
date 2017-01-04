@@ -26,7 +26,7 @@ namespace Sassy_Saloons.Pages
     public sealed partial class salComment : Page
     {
         LoginInfo log;
-        CommentInfo com;
+        CommentInfo com;        
         ObservableCollection<Response> comments;
 
         public salComment()
@@ -39,14 +39,14 @@ namespace Sassy_Saloons.Pages
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {            
             log = salProfile.log;
-            com.Salonname = salProfile.data.SalonName;
-            com.Username = log.Username;
-            com.Upins = makeComment.upins;
-            // stars will come from this page, comments from makeComment                        
+            var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;
             
+            com.Username = (string)keepTemp.Values["user"];            
+            com.Salonname = salProfile.data.SalonName;            
+
             try
-            {
-                await CommentCall.GetCommentsAsync(com, comments);
+            {                
+                await CommentCall.GetCommentsAsync(com, comments);                
             }            
 
             catch (Exception) { }
@@ -55,12 +55,68 @@ namespace Sassy_Saloons.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+
             com.Comment = (string)e.Parameter;
         }
 
         private void moreButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(salProfile), log);                    
+        }
+
+        private void giveStar_Click(object sender, RoutedEventArgs e)
+        {
+            moreButton.Visibility = Visibility.Collapsed;
+            commentButton.Visibility = Visibility.Collapsed;
+            starList.Visibility = Visibility.Collapsed;
+            commentsList.Visibility = Visibility.Collapsed;
+            giveStar.Visibility = Visibility.Collapsed;
+
+            starField.Visibility = Visibility.Visible;
+            commentBox.Visibility = Visibility.Visible;
+            makeCommentButton.Visibility = Visibility.Visible;
+            back.Visibility = Visibility.Visible;
+        }
+
+        private async void makeCommentButton_Click(object sender, RoutedEventArgs e)
+        {
+            com.Upins = true;
+            com.Comment = commentBox.Text;
+            com.Star = starField.Text;
+
+            try
+            {
+                await CommentCall.GetCommentsAsync(com, comments);
+            }
+
+            catch (Exception) { }
+
+            com.Upins = false;
+
+            starField.Visibility = Visibility.Collapsed;
+            commentBox.Visibility = Visibility.Collapsed;
+            makeCommentButton.Visibility = Visibility.Collapsed;
+            back.Visibility = Visibility.Collapsed;
+
+            moreButton.Visibility = Visibility.Visible;
+            commentButton.Visibility = Visibility.Visible;
+            starList.Visibility = Visibility.Visible;
+            commentsList.Visibility = Visibility.Visible;
+            giveStar.Visibility = Visibility.Visible;
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            starField.Visibility = Visibility.Collapsed;
+            commentBox.Visibility = Visibility.Collapsed;
+            makeCommentButton.Visibility = Visibility.Collapsed;
+            back.Visibility = Visibility.Collapsed;
+
+            moreButton.Visibility = Visibility.Visible;
+            commentButton.Visibility = Visibility.Visible;
+            starList.Visibility = Visibility.Visible;
+            commentsList.Visibility = Visibility.Visible;
+            giveStar.Visibility = Visibility.Visible;
         }
     }
 
@@ -70,6 +126,6 @@ namespace Sassy_Saloons.Pages
         public string Salonname { get; set; }
         public string Comment { get; set; }
         public string Star { get; set; }
-        public int Upins { get; set; }
+        public bool Upins { get; set; }
     }
 }

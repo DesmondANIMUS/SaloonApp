@@ -7,7 +7,26 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
 
+        <TextBox x:ConnectionId='1' x:Name="starField" Grid.Row="1" FontSize="15"
+                 VerticalAlignment="Top" Margin="20,20,20,0" />
+
+        <TextBox x:ConnectionId='2' x:Name="commentBox" Grid.Row="1"                 
+                 Margin="20,100,20,30" FontSize="20"/>
+
+        <Button x:ConnectionId='3' x:Name="makeCommentButton" Grid.Row="2"                
+                Style="{StaticResource buttonStyle}"
+                FontFamily="Default" Foreground="White"
+                Background="Teal"                                
+                Content="Comment"/>
+
+        <Button x:ConnectionId='4' x:Name="back" Content=""                   
+                Style="{StaticResource buttonStyle}"/>
     </Grid>
 </Page>
 

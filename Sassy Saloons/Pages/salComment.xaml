@@ -29,6 +29,11 @@
                 Content="" FontSize="30"
                 Background="Teal" Foreground="White"/>
 
+        <Button x:Name="giveStar" Click="giveStar_Click"
+                Content="Stars" FontSize="30" Grid.Row="1"
+                Grid.ColumnSpan="2" HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+
         <ListView x:Name="commentsList"
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -68,6 +73,28 @@
             </ListView.ItemTemplate>
 
         </ListView>
+
+
+
+        <TextBox x:Name="starField" FontSize="15" Grid.ColumnSpan="2"
+                 VerticalAlignment="Top" Margin="20,20,20,0"
+                 Visibility="Collapsed"/>
+
+        <TextBox x:Name="commentBox" Grid.ColumnSpan="2"                 
+                 Margin="20,100,20,30" FontSize="20"
+                 Visibility="Collapsed"/>
+
+        <Button x:Name="makeCommentButton" Grid.Row="2"                
+                Style="{StaticResource buttonStyle}"
+                FontFamily="Default" Foreground="White"
+                Background="Teal" Click="makeCommentButton_Click"
+                Content="Comment" Grid.ColumnSpan="2"
+                Visibility="Collapsed"/>
+
+        <Button x:Name="back" Content="" Click="back_Click"
+                Style="{StaticResource buttonStyle}"
+                Grid.Row="1" Grid.ColumnSpan="2"
+                Visibility="Collapsed"/>
 
     </Grid>
 </Page>

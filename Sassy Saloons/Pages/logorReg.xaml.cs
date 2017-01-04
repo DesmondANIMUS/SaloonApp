@@ -68,13 +68,10 @@ namespace Sassy_Saloons.Pages
                     if (type.Equals("EndUser"))
                         Frame.Navigate(typeof(userProfile), log);
                     else
-                    {
-                        salMore obSal = new salMore();
-
+                    {                        
                         Frame.Navigate(typeof(salProfile), log);
                         intent = true;
-                    }
-                    
+                    }                    
                 }
             }
 
