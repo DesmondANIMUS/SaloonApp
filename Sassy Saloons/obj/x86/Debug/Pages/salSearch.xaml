@@ -14,32 +14,31 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.15*"/>
         </Grid.RowDefinitions>
-        
-        <Button x:ConnectionId='2' x:Name="saloon"                     
-                VerticalAlignment="Top" HorizontalAlignment="Center"
-                Width="200" Height="30" Content="saloon"/>
-        
-        <Button x:ConnectionId='3' x:Name="user"                    
+                
+        <Button x:ConnectionId='2' x:Name="user"                    
                 Style="{StaticResource buttonStyle}"
                 Grid.Row="1" Content=""/>
 
-        <ListView x:ConnectionId='4' x:Name="saloonsSearched" HorizontalAlignment="Center"
+        <ListView x:ConnectionId='3' x:Name="saloonsSearchedList" 
+                  HorizontalAlignment="Center"
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                  IsItemClickEnabled="True" Margin="0,50,0,0"
+                  
+                  IsItemClickEnabled="True" Margin="0,20,0,80"
+                  
                                                         
-                                                                     >
+                                                                         >
 
             <ListView.ItemTemplate>
 
                 <DataTemplate                               >
                     
-                    <StackPanel x:ConnectionId='6' Margin="0,0,0,30" >
-                        <TextBlock x:ConnectionId='7' x:Name="salonBlock" 
+                    <StackPanel x:ConnectionId='5' Margin="0,0,0,30" >
+                        <TextBlock x:ConnectionId='6' x:Name="salonBlock" 
                                VerticalAlignment="Center"
                                FontSize="30"                           />
 
-                        <TextBlock x:ConnectionId='8' x:Name="usernameBlock" 
+                        <TextBlock x:ConnectionId='7' x:Name="usernameBlock" 
                                    VerticalAlignment="Center"  
                                    Visibility="Collapsed"
                                    FontSize="30"                          />
@@ -51,8 +50,10 @@
 
         </ListView>
 
-        <TextBlock x:ConnectionId='5' x:Name="gimmeProfile" Visibility="Collapsed"
-                   Text="{Binding ElementName=saloonsSearched, Path=SelectedItem.usernameBlock}"/>
+        <TextBlock x:ConnectionId='4' x:Name="gimmeProfile" VerticalAlignment="Bottom"
+                   FontSize="30" 
+                   Text="{Binding ElementName=saloonsSearchedList, 
+                   Path=SelectedItem.Username}"/>
     </Grid>
 </Page>
 

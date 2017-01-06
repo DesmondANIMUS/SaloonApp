@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\UWP\Sassy Saloons\Sassy Saloons\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-04T16:47:37.880</Modified>
+      <Modified>2017-01-06T09:58:38.011</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\UWP\Sassy Saloons\Sassy Saloons\bin\x86\Debug\Sassy Saloons.exe">
       <PackagePath>entrypoint\Sassy Saloons.exe</PackagePath>
-      <Modified>2017-01-04T16:47:35.057</Modified>
+      <Modified>2017-01-06T09:58:37.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -548,7 +548,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\UWP\Sassy Saloons\Sassy Saloons\bin\x86\Debug\Sassy Saloons.xr.xml">
       <PackagePath>Sassy Saloons.xr.xml</PackagePath>
-      <Modified>2017-01-04T16:47:34.756</Modified>
+      <Modified>2017-01-06T09:58:36.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -557,11 +557,11 @@
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\UWP\Sassy Saloons\Sassy Saloons\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-04T16:47:37.406</Modified>
+      <Modified>2017-01-06T09:58:37.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\UWP\Sassy Saloons\Sassy Saloons\bin\x86\Debug\Core\Sassy Saloons.exe">
       <PackagePath>Sassy Saloons.exe</PackagePath>
-      <Modified>2017-01-04T16:47:37.876</Modified>
+      <Modified>2017-01-06T09:58:37.996</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

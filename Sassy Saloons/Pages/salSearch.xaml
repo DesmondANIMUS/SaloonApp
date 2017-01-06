@@ -14,21 +14,20 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.15*"/>
         </Grid.RowDefinitions>
-        
-        <Button x:Name="saloon" Click="saloon_Click"
-                VerticalAlignment="Top" HorizontalAlignment="Center"
-                Width="200" Height="30" Content="saloon"/>
-        
+                
         <Button x:Name="user" Click="user_Click" 
                 Style="{StaticResource buttonStyle}"
                 Grid.Row="1" Content=""/>
 
-        <ListView x:Name="saloonsSearched" HorizontalAlignment="Center"
+        <ListView x:Name="saloonsSearchedList" 
+                  HorizontalAlignment="Center"
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                  IsItemClickEnabled="True" Margin="0,50,0,0"
+                  
+                  IsItemClickEnabled="True" Margin="0,20,0,0"
+                  
                   ItemsSource="{x:Bind searchedSaloons}"
-                  SelectionChanged="saloonsSearched_SelectionChanged">
+                  SelectionChanged="saloonsSearchedList_SelectionChanged">
 
             <ListView.ItemTemplate>
 
@@ -51,7 +50,9 @@
 
         </ListView>
 
-        <TextBlock x:Name="gimmeProfile" Visibility="Collapsed"
-                   Text="{Binding ElementName=saloonsSearched, Path=SelectedItem.usernameBlock}"/>
+        <TextBlock x:Name="gimmeProfile" VerticalAlignment="Bottom"
+                   FontSize="30" Visibility="Collapsed"
+                   Text="{Binding ElementName=saloonsSearchedList, 
+                   Path=SelectedItem.Username}"/>
     </Grid>
 </Page>

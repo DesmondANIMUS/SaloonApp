@@ -2,7 +2,7 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="SelectedItem" />
-    <RootPropertyPathName Name="usernameBlock" />
+    <RootPropertyPathName Name="Username" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -53,8 +53,6 @@
       <RootProperty Name="Style" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">

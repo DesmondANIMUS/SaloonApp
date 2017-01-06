@@ -21,8 +21,7 @@ namespace Sassy_Saloons.Pages
         {
             this.InitializeComponent();
             log = new LoginInfo();
-            searchedSaloons = new ObservableCollection<SearchResult>();
-            saloon.Visibility = Visibility.Collapsed;
+            searchedSaloons = new ObservableCollection<SearchResult>();            
         }
         
         private void user_Click(object sender, RoutedEventArgs e)
@@ -39,15 +38,7 @@ namespace Sassy_Saloons.Pages
                 logorReg.intent = true;
                 Frame.Navigate(typeof(salProfile), log);                
             } 
-        }
-
-        private void saloon_Click(object sender, RoutedEventArgs e)
-        {
-            log.Username = "simple";
-            log.TypeLogin = "Saloon";            
-
-            Frame.Navigate(typeof(salProfile), log);
-        }
+        }        
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -59,8 +50,8 @@ namespace Sassy_Saloons.Pages
             catch (Exception) { }
         }
 
-        private void saloonsSearched_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        private void saloonsSearchedList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {            
             log.Username = gimmeProfile.Text;
             log.TypeLogin = "Saloon";
             logorReg.intent = false;            
