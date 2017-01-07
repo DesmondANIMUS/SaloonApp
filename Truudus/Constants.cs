@@ -1,4 +1,6 @@
-﻿namespace Truudus
+﻿using System;
+
+namespace Truudus
 {
     class Constants
     {
@@ -7,6 +9,10 @@
 
         private const string privateKey             = "h8mDq5YIF1SWNHkArGmw";
         private const string publicKey              = "rQ9P5YLnqt8JEmarbyoo  ";
+
+        private const string apiKey                 = "AIzaSyBu5-1WPBPeyqEPCdG7EBnAxJR4n8HqiGM";
+
+        private const string geobase                = "https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key=";
         #endregion
 
 
@@ -15,13 +21,15 @@
         private const string salcom                 = baseUrl + "salComment";
         private const string reguse                 = baseUrl + "regUser";
         private const string login                  = baseUrl + "login";
-        private const string incom                  = baseUrl + "salComment";        
+        private const string incom                  = baseUrl + "salComment";
+        private const string geoco                  = geobase + apiKey;
 
         internal const string SALREG                = salreg;
         internal const string SALCOM                = salcom;
         internal const string REGUSE                = reguse;
         internal const string LOGIN                 = login;
-        internal const string INCOM                 = incom;        
+        internal const string INCOM                 = incom;
+        internal const string GEOCO                 = geoco;
         #endregion
 
         #region Get them

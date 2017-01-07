@@ -69,6 +69,12 @@
                 Grid.Row="2" HorizontalAlignment="Left"
                 Content=""                           />
 
+        <Button x:ConnectionId='10' x:Name="logoutBut" Style="{StaticResource buttonStyle}"
+                Grid.Column="1" VerticalAlignment="Top"
+                HorizontalAlignment="Right" FontSize="20"
+                Content="Logout" FontFamily="Default"
+                                       />
+        
     </Grid>
 </Page>
 

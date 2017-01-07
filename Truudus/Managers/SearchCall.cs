@@ -34,5 +34,16 @@ namespace Truudus.Managers
             foreach (var a in actual)
                 searchResults.Add(a);
         }
+
+        internal static async Task GetSaloonByLocation(ObservableCollection<SearchResult> searchResults, string city)
+        {
+            searchResults.Clear();
+            var datawrapper = await GetSaloonWrapperAsync();
+            var actual = datawrapper.SearchResults;
+
+            foreach (var a in actual)
+                if (a.City.Equals(city))
+                    searchResults.Add(a);
+        }
     }
 }

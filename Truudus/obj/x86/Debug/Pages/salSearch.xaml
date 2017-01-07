@@ -35,14 +35,14 @@
 
                 <DataTemplate                               >
                     
-                    <StackPanel x:ConnectionId='5' Margin="0,0,0,30" 
+                    <StackPanel x:ConnectionId='6' Margin="0,0,0,30" 
                                 HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='6' x:Name="salonBlock" 
+                        <TextBlock x:ConnectionId='7' x:Name="salonBlock" 
                                    VerticalAlignment="Center"
                                    TextAlignment="Center"
                                    FontSize="30"                           />
 
-                        <TextBlock x:ConnectionId='7' x:Name="usernameBlock" 
+                        <TextBlock x:ConnectionId='8' x:Name="usernameBlock" 
                                    VerticalAlignment="Center"  
                                    Visibility="Collapsed"
                                    FontSize="30"                          />
@@ -58,6 +58,12 @@
                    FontSize="30" Visibility="Collapsed"
                    Text="{Binding ElementName=saloonsSearchedList, 
                    Path=SelectedItem.Username}"/>
+
+        <ProgressRing x:ConnectionId='5' x:Name="searchRing" 
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Stretch"
+                      Margin="120,220,120,220"
+                      Foreground="Teal"/>
     </Grid>
 </Page>
 

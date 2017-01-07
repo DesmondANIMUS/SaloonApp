@@ -58,5 +58,11 @@
                    FontSize="30" Visibility="Collapsed"
                    Text="{Binding ElementName=saloonsSearchedList, 
                    Path=SelectedItem.Username}"/>
+
+        <ProgressRing x:Name="searchRing" 
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Stretch"
+                      Margin="120,220,120,220"
+                      Foreground="Teal"/>
     </Grid>
 </Page>

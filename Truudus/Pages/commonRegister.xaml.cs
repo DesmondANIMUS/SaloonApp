@@ -30,8 +30,9 @@ namespace Truudus.Pages
 
         private void goNext_Click(object sender, RoutedEventArgs e)
         {                       
-            parameters.Username = usernameBox.Text;            
-            parameters.City = cityBox.Text;
+            parameters.Username = usernameBox.Text;
+            parameters.City = Formatting(cityBox.Text);            
+
             parameters.State = stateBox.Text;
             parameters.Pin = pinBox.Text;
 
@@ -57,6 +58,15 @@ namespace Truudus.Pages
         private void goBack_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(logorReg), parameters.TypeUser);
+        }
+
+        private string Formatting(string s)
+        {
+            s.TrimEnd(' ');            
+
+            char[] a = s.ToCharArray();            
+            a[0] = char.ToUpper(a[0]);
+            return new string(a);
         }
     }
 

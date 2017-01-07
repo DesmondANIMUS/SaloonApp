@@ -4,6 +4,7 @@ using System;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -14,14 +15,14 @@ namespace Truudus.Pages
     /// </summary>
     public sealed partial class salSearch : Page
     {
-        LoginInfo log;
+        LoginInfo log;        
         ObservableCollection<SearchResult> searchedSaloons;
-
+        
         public salSearch()
         {
             this.InitializeComponent();
-            log = new LoginInfo();
-            searchedSaloons = new ObservableCollection<SearchResult>();            
+            log = new LoginInfo();            
+            searchedSaloons = new ObservableCollection<SearchResult>();
         }
         
         private void user_Click(object sender, RoutedEventArgs e)
@@ -42,12 +43,38 @@ namespace Truudus.Pages
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            searchRing.Visibility = Visibility.Visible;
+            searchRing.IsActive = true;
+
             try
             {
-                await SearchCall.GetSaloonsAsync(searchedSaloons);
+                var location = await LocationManagerCall.GetPositionAsync();
+
+                if (location == null)
+                    await SearchCall.GetSaloonsAsync(searchedSaloons);
+                else
+                {
+                    string city = null;
+                    city = await GoogleRevGeoCall.GetCityNameAsync(location.Coordinate.Latitude.ToString(), location.Coordinate.Longitude.ToString());
+                    
+                                        
+                    await SearchCall.GetSaloonByLocation(searchedSaloons, city);
+
+                    if (searchedSaloons.Count == 0)
+                    {
+                        var dialog = new MessageDialog("Search results inconclusive :(");
+                        await dialog.ShowAsync();
+                    }
+                }
             }
 
             catch (Exception) { }
+
+            finally
+            {
+                searchRing.Visibility = Visibility.Collapsed;
+                searchRing.IsActive = false;
+            }
         }
 
         private void saloonsSearchedList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -58,5 +85,5 @@ namespace Truudus.Pages
 
             Frame.Navigate(typeof(salProfile), log);
         }
-    }
+    }    
 }
