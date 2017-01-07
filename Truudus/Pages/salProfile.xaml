@@ -69,5 +69,11 @@
                 Grid.Row="2" HorizontalAlignment="Left"
                 Content="" Click="searchButton_Click"/>
 
+        <Button x:Name="logoutBut" Style="{StaticResource buttonStyle}"
+                Grid.Column="1" VerticalAlignment="Top"
+                HorizontalAlignment="Right" FontSize="20"
+                Content="Logout" FontFamily="Default"
+                Click="logoutBut_Click"/>
+        
     </Grid>
 </Page>

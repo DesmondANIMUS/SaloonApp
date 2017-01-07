@@ -46,5 +46,15 @@ namespace Truudus.Pages
         {
             Frame.Navigate(typeof(salSearch));
         }
+
+        private void logoutBut_Click(object sender, RoutedEventArgs e)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+            localSettings.Values["user"] = null;
+            localSettings.Values["type"] = null;
+
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }

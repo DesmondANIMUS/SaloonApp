@@ -34,6 +34,11 @@ namespace Truudus.Pages
             type = e.Parameter.ToString();            
         }
 
+        private void goBack_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
         private void register_Click(object sender, RoutedEventArgs e)
         {            
             Frame.Navigate(typeof(commonRegister), type);

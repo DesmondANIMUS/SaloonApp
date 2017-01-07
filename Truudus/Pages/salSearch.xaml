@@ -20,12 +20,14 @@
                 Grid.Row="1" Content=""/>
 
         <ListView x:Name="saloonsSearchedList" 
-                  HorizontalAlignment="Center"
+                  HorizontalAlignment="Stretch"
+                  
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
                   
                   IsItemClickEnabled="True" Margin="0,20,0,0"
                   
+
                   ItemsSource="{x:Bind searchedSaloons}"
                   SelectionChanged="saloonsSearchedList_SelectionChanged">
 
@@ -33,10 +35,12 @@
 
                 <DataTemplate x:DataType="data:SearchResult">
                     
-                    <StackPanel Margin="0,0,0,30" >
+                    <StackPanel Margin="0,0,0,30" 
+                                HorizontalAlignment="Center">
                         <TextBlock x:Name="salonBlock" 
-                               VerticalAlignment="Center"
-                               FontSize="30" Text="{x:Bind SalonName}" />
+                                   VerticalAlignment="Center"
+                                   TextAlignment="Center"
+                                   FontSize="30" Text="{x:Bind SalonName}" />
 
                         <TextBlock x:Name="usernameBlock" 
                                    VerticalAlignment="Center"  

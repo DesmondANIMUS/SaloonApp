@@ -36,7 +36,7 @@
                      Grid.Column="1" Style="{StaticResource passStyle}"/>
 
         <Button x:Name="login" Grid.Row="2" VerticalAlignment="Center"
-                HorizontalAlignment="Stretch" Content="" FontSize="100"
+                HorizontalAlignment="Stretch" Content="" FontSize="100"
                 FontFamily="Segoe MDL2 Assets" Background="White"
                 Grid.ColumnSpan="2" Click="login_Click"/>
 
@@ -46,6 +46,12 @@
                 VerticalAlignment="Stretch" FontSize="25"
                 Background="Teal" Foreground="White"
                 Grid.ColumnSpan="2" Click="register_Click"/>
+
+        <Button x:Name="goBack" Content="" 
+                VerticalAlignment="Top" 
+                FontFamily="Segoe MDL2 Assets"
+                Background="Transparent"
+                Click="goBack_Click"/>
 
     </Grid>
 </Page>

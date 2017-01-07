@@ -126,6 +126,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Truudus.Pages.salComment" />
     <RootType FullName="Truudus.Pages.salMore" />

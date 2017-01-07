@@ -41,10 +41,10 @@ namespace Truudus
                 switch (log.TypeLogin)
                 {
                     case "EndUser":
-             //           Frame.Navigate(typeof(userProfile), log);
+                        Frame.Navigate(typeof(userProfile), log);
                         break;
                     case "Saloon":
-             //           Frame.Navigate(typeof(salProfile), log);
+                        Frame.Navigate(typeof(salProfile), log);
                         break;
                 }
             }
