@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>1be388cc-5956-47f9-8bef-402d430f0b36</PackageIdentityName>
     <PackageIdentityPublisher>CN=Desmond</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-16T14:14:22.377</Modified>
+      <Modified>2017-01-16T14:46:22.533</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Truudus.exe">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\bin\x86\Debug\Truudus.exe">
       <PackagePath>entrypoint\Truudus.exe</PackagePath>
-      <Modified>2017-01-16T14:14:21.520</Modified>
+      <Modified>2017-01-16T14:46:20.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -500,53 +500,53 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T17:45:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\person.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\person.png">
       <PackagePath>Assets\person.png</PackagePath>
       <Modified>2016-12-30T14:42:46.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-12-14T06:59:32.599</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.682</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.682</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-14T06:59:32.682</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Assets\sci.jpg">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Assets\sci.jpg">
       <PackagePath>Assets\sci.jpg</PackagePath>
       <Modified>2016-12-30T14:42:53.291</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-12-30T14:20:33.348</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Truudus.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\bin\x86\Debug\Truudus.xr.xml">
       <PackagePath>Truudus.xr.xml</PackagePath>
       <Modified>2017-01-16T14:10:18.607</Modified>
     </AppxPackagedFile>
@@ -554,14 +554,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-12-14T07:12:14.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-16T14:14:22.087</Modified>
+      <Modified>2017-01-16T14:46:22.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Core\Truudus.exe">
+    <AppxPackagedFile Include="C:\Users\Desmond\Source\Repos\SaloonApp\Truudus\bin\x86\Debug\Core\Truudus.exe">
       <PackagePath>Truudus.exe</PackagePath>
-      <Modified>2017-01-16T14:14:22.371</Modified>
+      <Modified>2017-01-16T14:46:22.522</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

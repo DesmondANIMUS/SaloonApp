@@ -75,9 +75,7 @@
                 Grid.Row="6" Click="goNext_Click"/>
 
         <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
-                Content="" Click="goBack_Click"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"/>
+                Content="" Click="goBack_Click"/>
 
     </Grid>
 </Page>
