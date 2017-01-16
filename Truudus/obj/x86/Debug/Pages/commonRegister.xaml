@@ -7,6 +7,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -25,6 +32,10 @@
         <TextBlock Text="" Style="{StaticResource fontStyle}"
                    Grid.Row="1"/>
 
+        <TextBlock Text="Username" Grid.Row="1" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
+
         <TextBlock Text="" Style="{StaticResource fontStyle}"
                    Grid.Row="2"/>
 
@@ -42,6 +53,10 @@
 
         <PasswordBox x:ConnectionId='1' x:Name="passBox" Grid.Row="2" Grid.Column="1"
                      Style="{StaticResource passStyle}"/>
+        
+        <TextBlock Text="Password" Grid.Row="2" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
 
         <TextBox x:ConnectionId='2' x:Name="usernameBox" Grid.Column="1" Grid.Row="1"
                  Style="{StaticResource textStyle}"/>
@@ -60,7 +75,9 @@
                 Grid.Row="6"                     />
 
         <Button x:ConnectionId='7' x:Name="goBack" Style="{StaticResource buttonStyle}"
-                Content="" Grid.ColumnSpan="2"                     />
+                Content=""                     
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
 
     </Grid>
 </Page>

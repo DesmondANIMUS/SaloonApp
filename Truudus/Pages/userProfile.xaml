@@ -9,6 +9,12 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0.6*" />
             <RowDefinition Height="*" />
@@ -29,29 +35,31 @@
 
         <TextBlock x:Name="NameBlock" Grid.Column="1"
                    VerticalAlignment="Center" TextAlignment="Center"
-                   Text="Name" FontSize="30"
+                   FontSize="30"
                    Margin="0,0,0,0"/>
 
         <TextBlock Grid.Row="1" Text="City:" VerticalAlignment="Top"
-                   TextAlignment="Center" FontSize="30"/>
+                   TextAlignment="Center" FontSize="30"
+                   x:Name="city"/>
 
         <TextBlock Grid.Row="1" Text="State:" VerticalAlignment="Center"
-                   TextAlignment="Center" FontSize="30"/>
+                   TextAlignment="Center" FontSize="30"
+                   x:Name="state"/>
 
         <TextBlock Grid.Row="1" Text="Pin:" VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"
-                   Margin="0,0,0,10"/>
+                   Margin="0,0,0,10" x:Name="pin"/>
 
         <TextBlock x:Name="CityBlock" Grid.Column="1"
-                   Grid.Row="1" Text="City" VerticalAlignment="Top"
+                   Grid.Row="1" VerticalAlignment="Top"
                    TextAlignment="Center" FontSize="30"/>
 
         <TextBlock x:Name="StateBlock" Grid.Column="1"
-                   Grid.Row="1" Text="State" VerticalAlignment="Center"
+                   Grid.Row="1" VerticalAlignment="Center"
                    TextAlignment="Center" FontSize="30"/>
         
         <TextBlock x:Name="PinBlock" Grid.Column="1" Margin="0,0,0,10"
-                   Grid.Row="1" Text="ThisPin" VerticalAlignment="Bottom"
+                   Grid.Row="1" VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"/>
 
         <Button x:Name="UserProfileBut" 
@@ -69,6 +77,13 @@
                 HorizontalAlignment="Right" FontSize="20"
                 Content="Logout" FontFamily="Default"
                 Click="logoutBut_Click"/>
-        
+
+        <ProgressRing x:Name="proRing" Grid.Row="1"
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Stretch"
+                      Grid.ColumnSpan="2"
+                      Margin="100,100,100,100"
+                      Foreground="Teal"/>
+
     </Grid>
 </Page>

@@ -15,13 +15,11 @@ namespace Truudus.Pages
     public sealed partial class personReg : Page
     {
         CheckingType par;
-        PersonInfo persona;
-        string gender;
+        PersonInfo persona;        
 
         public personReg()
         {
-            this.InitializeComponent();
-            FillCombo();
+            this.InitializeComponent();            
             persona = new PersonInfo();
         }
 
@@ -35,37 +33,32 @@ namespace Truudus.Pages
         private void goBack_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(commonRegister), par.TypeUser);
-        }       
-
-        void FillCombo()
-        {
-
-            sexComboSe.Items.Add("Female");
-            sexComboSe.Items.Add("Gender Fluid");
-            sexComboSe.Items.Add("Male");            
-        }
-
-        private void sexComboSe_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            gender = sexComboSe.SelectedValue as string;
-        }
-
+        }               
+        
         private async void goNext_Click(object sender, RoutedEventArgs e)
         {
+            goNext.Content = "";
+            welcomeRing.Visibility = Visibility.Visible;
+            welcomeRing.IsActive = true;
+
             persona.FirstName = fname.Text;
             persona.LastName = lname.Text;
-            persona.Sex = gender;
+            persona.Email = emailBox.Text;
 
             try
             {
-                var response = await CommonCall.RegisterYourselfAsync(par, null, persona);
-                var dialog = new MessageDialog(response.response.ToString());
-                await dialog.ShowAsync();
-
+                var response = await CommonCall.RegisterYourselfAsync(par, null, persona);                
                 Frame.Navigate(typeof(logorReg), par.TypeUser);
             }
 
             catch (Exception) { }
+
+            finally
+            {
+                welcomeRing.Visibility = Visibility.Collapsed;
+                welcomeRing.IsActive = false;
+                goNext.Content = "Welcome";
+            }
         }
     }
 
@@ -73,6 +66,6 @@ namespace Truudus.Pages
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Sex { get; set; }
+        public string Email { get; set; }
     }
 }

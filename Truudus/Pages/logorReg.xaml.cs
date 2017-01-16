@@ -58,18 +58,19 @@ namespace Truudus.Pages
 
             try
             {
+                welcomeRing.Visibility = Visibility.Visible;
+                welcomeRing.IsActive = true;
+                login.Content = "";
+
                 response = await CommonCall.RegisterYourselfAsync(null, null, null, log);
 
-                var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;
-
-                keepTemp.Values["user"] = log.Username;
-                keepTemp.Values["type"] = log.TypeLogin;
-
-                var dialog = new MessageDialog(response.response.ToString());
-                await dialog.ShowAsync();
+                var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;                
 
                 if (response.response.Equals("Success"))
                 {
+                    keepTemp.Values["user"] = log.Username;
+                    keepTemp.Values["type"] = log.TypeLogin;
+
                     if (type.Equals("EndUser"))
                         Frame.Navigate(typeof(userProfile), log);
                     else
@@ -81,6 +82,13 @@ namespace Truudus.Pages
             }
 
             catch (Exception) { }                        
+
+            finally
+            {
+                welcomeRing.Visibility = Visibility.Collapsed;
+                welcomeRing.IsActive = false;
+                login.Content = "";
+            }
         }
     }
 

@@ -47,7 +47,7 @@ namespace Truudus.Pages
             else
                 editButton.Visibility = Visibility.Collapsed;
 
-            speicalBlock.Text = extraData.Speciality;
+            speicalBlock.Text = extraData.Email;
             descBlock.Text = extraData.ShortDesc;
         }
 

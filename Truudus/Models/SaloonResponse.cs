@@ -10,7 +10,7 @@ namespace Truudus.Models
         public string State { get; set; }
         public string PinCode { get; set; }
         public string SalonName { get; set; }
-        public string Speciality { get; set; }
+        public string Email { get; set; }
         public string ShortDesc { get; set; }
     }
 

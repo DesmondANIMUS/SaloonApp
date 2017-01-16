@@ -16,10 +16,10 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="Style" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontWeight" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
@@ -52,6 +52,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
@@ -65,6 +66,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
+      <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
@@ -76,6 +78,8 @@
       <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
@@ -90,14 +94,14 @@
     <RootType FullName="Truudus.MainPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Truudus.Pages.commonRegister" />
-    <RootType FullName="Truudus.Pages.logorReg" />
-    <RootType FullName="Truudus.Pages.makeComment" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootEvent Name="SelectionChanged" />
+      <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Truudus.Pages.logorReg" />
+    <RootType FullName="Truudus.Pages.makeComment" />
     <RootType FullName="Truudus.Pages.personReg" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
@@ -139,12 +143,6 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Truudus.Pages.salProfile" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Foreground" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
       <RootProperty Name="Path" />

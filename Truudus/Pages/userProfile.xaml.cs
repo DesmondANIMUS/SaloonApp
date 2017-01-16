@@ -22,6 +22,17 @@ namespace Truudus.Pages
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            proRing.Visibility = Visibility.Visible;
+            proRing.IsActive = true;
+
+            NameBlock.Visibility = Visibility.Collapsed;
+            city.Visibility = Visibility.Collapsed;
+            pin.Visibility = Visibility.Collapsed;
+            state.Visibility = Visibility.Collapsed;
+            userPic.Visibility = Visibility.Collapsed;
+            UserProfileBut.Visibility = Visibility.Collapsed;
+            SaloonSearchBut.Visibility = Visibility.Collapsed;            
+
             try
             {
                 var data = await CommonGettingUsersCall.GetUserInfo(log);
@@ -33,6 +44,20 @@ namespace Truudus.Pages
             }
 
             catch (Exception) { }
+
+            finally
+            {
+                proRing.Visibility = Visibility.Collapsed;
+                proRing.IsActive = false;
+
+                NameBlock.Visibility = Visibility.Visible;
+                city.Visibility = Visibility.Visible;
+                state.Visibility = Visibility.Visible;
+                pin.Visibility = Visibility.Visible;
+                userPic.Visibility = Visibility.Visible;
+                UserProfileBut.Visibility = Visibility.Visible;
+                SaloonSearchBut.Visibility = Visibility.Visible;
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

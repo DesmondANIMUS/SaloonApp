@@ -9,6 +9,12 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0.6*" />
             <RowDefinition Height="*" />
@@ -29,47 +35,56 @@
 
         <TextBlock x:ConnectionId='3' x:Name="NameBlock" Grid.Column="1"
                    VerticalAlignment="Center" TextAlignment="Center"
-                   Text="Name" FontSize="30"
+                   FontSize="30"
                    Margin="0,0,0,0"/>
 
-        <TextBlock Grid.Row="1" Text="City:" VerticalAlignment="Top"
-                   TextAlignment="Center" FontSize="30"/>
-
-        <TextBlock Grid.Row="1" Text="State:" VerticalAlignment="Center"
-                   TextAlignment="Center" FontSize="30"/>
-
-        <TextBlock Grid.Row="1" Text="Pin:" VerticalAlignment="Bottom"
+        <TextBlock x:ConnectionId='4' Grid.Row="1" Text="City:" VerticalAlignment="Top"
                    TextAlignment="Center" FontSize="30"
-                   Margin="0,0,0,10"/>
+                   x:Name="city"/>
 
-        <TextBlock x:ConnectionId='4' x:Name="CityBlock" Grid.Column="1"
-                   Grid.Row="1" Text="City" VerticalAlignment="Top"
+        <TextBlock x:ConnectionId='5' Grid.Row="1" Text="State:" VerticalAlignment="Center"
+                   TextAlignment="Center" FontSize="30"
+                   x:Name="state"/>
+
+        <TextBlock x:ConnectionId='6' Grid.Row="1" Text="Pin:" VerticalAlignment="Bottom"
+                   TextAlignment="Center" FontSize="30"
+                   Margin="0,0,0,10" x:Name="pin"/>
+
+        <TextBlock x:ConnectionId='7' x:Name="CityBlock" Grid.Column="1"
+                   Grid.Row="1" VerticalAlignment="Top"
                    TextAlignment="Center" FontSize="30"/>
 
-        <TextBlock x:ConnectionId='5' x:Name="StateBlock" Grid.Column="1"
-                   Grid.Row="1" Text="State" VerticalAlignment="Center"
+        <TextBlock x:ConnectionId='8' x:Name="StateBlock" Grid.Column="1"
+                   Grid.Row="1" VerticalAlignment="Center"
                    TextAlignment="Center" FontSize="30"/>
         
-        <TextBlock x:ConnectionId='6' x:Name="PinBlock" Grid.Column="1" Margin="0,0,0,10"
-                   Grid.Row="1" Text="ThisPin" VerticalAlignment="Bottom"
+        <TextBlock x:ConnectionId='9' x:Name="PinBlock" Grid.Column="1" Margin="0,0,0,10"
+                   Grid.Row="1" VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"/>
 
-        <Button x:ConnectionId='7' x:Name="UserProfileBut" 
+        <Button x:ConnectionId='10' x:Name="UserProfileBut" 
                 Style="{StaticResource buttonStyle}" 
                 Grid.Row="3" Content="" VerticalAlignment="Stretch"
                 Background="Teal" Foreground="White"/>
 
-        <Button x:ConnectionId='8' x:Name="SaloonSearchBut"  Grid.Column="1"
+        <Button x:ConnectionId='11' x:Name="SaloonSearchBut"  Grid.Column="1"
                 Style="{StaticResource buttonStyle}" 
                 Grid.Row="3" Content="" VerticalAlignment="Stretch"
                 Background="Silver"                              />
 
-        <Button x:ConnectionId='9' x:Name="logoutBut" Style="{StaticResource buttonStyle}"
+        <Button x:ConnectionId='12' x:Name="logoutBut" Style="{StaticResource buttonStyle}"
                 Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Right" FontSize="20"
                 Content="Logout" FontFamily="Default"
                                        />
-        
+
+        <ProgressRing x:ConnectionId='13' x:Name="proRing" Grid.Row="1"
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Stretch"
+                      Grid.ColumnSpan="2"
+                      Margin="100,100,100,100"
+                      Foreground="Teal"/>
+
     </Grid>
 </Page>
 

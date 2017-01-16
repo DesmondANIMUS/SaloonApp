@@ -45,6 +45,7 @@ namespace Truudus
                         break;
                     case "Saloon":
                         Frame.Navigate(typeof(salProfile), log);
+                        logorReg.intent = true;
                         break;
                 }
             }

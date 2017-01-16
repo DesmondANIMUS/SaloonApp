@@ -1,18 +1,15 @@
-﻿using System;
-
-namespace Truudus
+﻿namespace Truudus
 {
     class Constants
     {
         #region bases
         private const string baseUrl                = "http://localhost:5000/";
-
-        private const string privateKey             = "";
-        private const string publicKey              = "  ";
-
-        private const string apiKey                 = "";
-
         private const string geobase                = "https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key=";
+
+        private const string privateKey             = "h8mDq5YIF1SWNHkArGmw";
+        private const string publicKey              = "rQ9P5YLnqt8JEmarbyoo";
+
+        private const string apiKey                 = "AIzaSyBu5-1WPBPeyqEPCdG7EBnAxJR4n8HqiGM";
         #endregion
 
 

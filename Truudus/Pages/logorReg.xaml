@@ -8,6 +8,12 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -25,8 +31,17 @@
                    Text="" HorizontalAlignment="Stretch"
                    VerticalAlignment="Center" TextAlignment="Center"/>
 
+        <TextBlock Text="Username" Margin="0,0,0,15" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
+
         <TextBox x:Name="username" Grid.Column="1"
                  Style="{StaticResource textStyle}"/>
+
+        <TextBlock Text="Password" Grid.Row="1" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,15"/>
 
         <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="70"
                    Text="" HorizontalAlignment="Stretch" Grid.Row="1"
@@ -48,10 +63,18 @@
                 Grid.ColumnSpan="2" Click="register_Click"/>
 
         <Button x:Name="goBack" Content="" 
-                VerticalAlignment="Top" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
                 FontFamily="Segoe MDL2 Assets"
                 Background="Transparent"
-                Click="goBack_Click"/>
+                Click="goBack_Click"
+                FontSize="20" FontWeight="Bold"/>
 
+
+        <ProgressRing x:Name="welcomeRing" Grid.Row="2"
+                      Grid.ColumnSpan="2" 
+                      VerticalAlignment="Stretch" 
+                      HorizontalAlignment="Stretch"
+                      Margin="120,50,120,50"/>
     </Grid>
 </Page>

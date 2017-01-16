@@ -36,28 +36,36 @@ namespace Truudus.Pages
         }
 
         private async void goNext_Click(object sender, RoutedEventArgs e)
-        {            
+        {
+            welcomeRing.Visibility = Visibility.Visible;
+            welcomeRing.IsActive = true;
+            goNext.Content = "";
+
             parameters.SaloonName = sname.Text;
-            parameters.Speciality = speciality.Text;
+            parameters.Email = email.Text;
             parameters.ShortDesc = shortDescbox.Text;
 
             try
             {
                 var response = await CommonCall.RegisterYourselfAsync(par, parameters);
-                var dialog = new MessageDialog(response.response.ToString());
-                await dialog.ShowAsync();
-
                 Frame.Navigate(typeof(logorReg), par.TypeUser);
             }
 
             catch (Exception) { }
+
+            finally
+            {
+                welcomeRing.Visibility = Visibility.Collapsed;
+                welcomeRing.IsActive = false;
+                goNext.Content = "Welcome";
+            }
         }
     }
 
     sealed class AllSaloonInfo
     {
         public string SaloonName { get; set; }        
-        public string Speciality { get; set; }
+        public string Email { get; set; }
         public string ShortDesc { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Popups;
+using System.Net.NetworkInformation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -48,24 +49,36 @@ namespace Truudus.Pages
 
             try
             {
-                var location = await LocationManagerCall.GetPositionAsync();
+                var isConnected = NetworkInterface.GetIsNetworkAvailable();
+                
+                if (isConnected == true)
+                {
+                    var location = await LocationManagerCall.GetPositionAsync();
 
-                if (location == null)
-                    await SearchCall.GetSaloonsAsync(searchedSaloons);
+                    if (location == null)
+                        await SearchCall.GetSaloonsAsync(searchedSaloons);
+                    else
+                    {
+                        string city = null;
+                        city = await GoogleRevGeoCall.GetCityNameAsync(location.Coordinate.Point.Position.Latitude.ToString(),
+                                                                       location.Coordinate.Point.Position.Longitude.ToString());
+
+
+                        await SearchCall.GetSaloonByLocation(searchedSaloons, city);
+
+                        if (searchedSaloons.Count <= 0)
+                        {
+                            var dialog = new MessageDialog("Search results inconclusive :(");
+                            await dialog.ShowAsync();
+                        }
+                    }
+                } 
+                
                 else
                 {
-                    string city = null;
-                    city = await GoogleRevGeoCall.GetCityNameAsync(location.Coordinate.Latitude.ToString(), location.Coordinate.Longitude.ToString());
-                    
-                                        
-                    await SearchCall.GetSaloonByLocation(searchedSaloons, city);
-
-                    if (searchedSaloons.Count == 0)
-                    {
-                        var dialog = new MessageDialog("Search results inconclusive :(");
-                        await dialog.ShowAsync();
-                    }
-                }
+                    var dialog = new MessageDialog("No internet, no gps :(");
+                    await dialog.ShowAsync();
+                }               
             }
 
             catch (Exception) { }

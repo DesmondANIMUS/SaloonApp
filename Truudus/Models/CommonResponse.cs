@@ -15,10 +15,9 @@
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Sex { get; set; }
+        public string Email { get; set; }
 
-        public string SalonName { get; set; }
-        public string Speciality { get; set; }
+        public string SalonName { get; set; }        
         public string ShortDesc { get; set; }
     }
 }
