@@ -51,10 +51,10 @@
 
 
         <Button x:Name="goNext" Style="{StaticResource buttonStyle}"
-                Content="Welcome" FontFamily="Default"
+                Content="Submit" FontFamily="Default"
                 Grid.ColumnSpan="2" Background="Teal"
-                Foreground="White" 
-                Grid.Row="4" Click="goNext_Click"/>
+                Foreground="White" Margin="50,35,50,35" 
+                Grid.Row="4" FontSize="30" Click="goNext_Click"/>
 
         <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2" Click="goBack_Click"

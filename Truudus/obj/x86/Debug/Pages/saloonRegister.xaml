@@ -50,9 +50,10 @@
                  Style="{StaticResource textStyle}"/>
 
         <Button x:ConnectionId='4' x:Name="goNext" Style="{StaticResource buttonStyle}"
-                Content="Welcome" FontFamily="Default"
+                Margin="55,50,55,50" FontFamily="Default"
                 Grid.ColumnSpan="2" Background="Teal"
-                Foreground="White"
+                Foreground="White" FontSize="30"
+                Content="Submit"
                 Grid.Row="4"                     />
 
         <Button x:ConnectionId='5' x:Name="goBack" Style="{StaticResource buttonStyle}"

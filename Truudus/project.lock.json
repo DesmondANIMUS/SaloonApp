@@ -22349,10 +22349,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desmond\\Source\\Repos\\SaloonApp\\Truudus\\Truudus.csproj",
+      "projectUniqueName": "C:\\Users\\Desmond\\Documents\\Visual Studio 2017\\Projects\\Universal\\Truudus\\Truudus\\Truudus.csproj",
       "projectName": "Truudus",
-      "projectPath": "C:\\Users\\Desmond\\Source\\Repos\\SaloonApp\\Truudus\\Truudus.csproj",
-      "projectJsonPath": "C:\\Users\\Desmond\\Source\\Repos\\SaloonApp\\Truudus\\project.json",
+      "projectPath": "C:\\Users\\Desmond\\Documents\\Visual Studio 2017\\Projects\\Universal\\Truudus\\Truudus\\Truudus.csproj",
+      "projectJsonPath": "C:\\Users\\Desmond\\Documents\\Visual Studio 2017\\Projects\\Universal\\Truudus\\Truudus\\project.json",
       "outputType": "UAP"
     },
     "dependencies": {

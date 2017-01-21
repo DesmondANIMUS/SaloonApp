@@ -1,10 +1,10 @@
 ﻿using Truudus.Managers;
 using Truudus.Models;
 using System;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -46,7 +46,7 @@ namespace Truudus.Pages
 
         private async void login_Click(object sender, RoutedEventArgs e)
         {
-            log.Username = username.Text;            
+            log.Username = username.Text;
             log.TypeLogin = type;
 
             #region For Encryption            
@@ -64,7 +64,7 @@ namespace Truudus.Pages
 
                 response = await CommonCall.RegisterYourselfAsync(null, null, null, log);
 
-                var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;                
+                var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;
 
                 if (response.response.Equals("Success"))
                 {
@@ -74,22 +74,24 @@ namespace Truudus.Pages
                     if (type.Equals("EndUser"))
                         Frame.Navigate(typeof(userProfile), log);
                     else
-                    {                        
+                    {
                         Frame.Navigate(typeof(salProfile), log);
                         intent = true;
-                    }                    
+                    }
                 }
             }
 
-            catch (Exception) { }                        
+            catch (Exception) { }
 
             finally
             {
                 welcomeRing.Visibility = Visibility.Collapsed;
                 welcomeRing.IsActive = false;
-                login.Content = "";
+                //login.Content = "";
+                login.Content = "Log In";
             }
         }
+        
     }
 
     sealed class LoginInfo
@@ -97,5 +99,5 @@ namespace Truudus.Pages
         public string Username  { get; set; }
         public string Password  { get; set; }
         public string TypeLogin { get; set; }
-    }
+    }    
 }

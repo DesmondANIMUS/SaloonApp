@@ -37,9 +37,10 @@
                 Background="Teal" Foreground="White"/>
 
         <Button x:ConnectionId='4' x:Name="giveStar"                       
-                Content="Stars" FontSize="30" Grid.Row="1"
+                Content="" FontSize="30" Grid.Row="1"
                 Grid.ColumnSpan="2" HorizontalAlignment="Center"
-                VerticalAlignment="Center"/>
+                VerticalAlignment="Center" FontFamily="Segoe MDL2 Assets" 
+                Background="Transparent"/>
 
         <ListView x:ConnectionId='5' x:Name="commentsList"
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"

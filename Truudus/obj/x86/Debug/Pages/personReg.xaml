@@ -51,10 +51,10 @@
 
 
         <Button x:ConnectionId='4' x:Name="goNext" Style="{StaticResource buttonStyle}"
-                Content="Welcome" FontFamily="Default"
+                Content="Submit" FontFamily="Default"
                 Grid.ColumnSpan="2" Background="Teal"
-                Foreground="White" 
-                Grid.Row="4"                     />
+                Foreground="White" Margin="50,35,50,35" 
+                Grid.Row="4" FontSize="30"                     />
 
         <Button x:ConnectionId='5' x:Name="goBack" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2"                     
