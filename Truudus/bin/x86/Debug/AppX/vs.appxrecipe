@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>8024CF637DE64891CDAD4248D323885F9351E6678CB2B7A6F5EA4D7EFF7E32BF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B8CA27E883B5753E9EEFD94FFA0D74E1FF077DD6F7EE6942CCEE02997B815A42</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1be388cc-5956-47f9-8bef-402d430f0b36_1.0.0.0_x86__bxyw9yvdx9jaw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1be388cc-5956-47f9-8bef-402d430f0b36_bxyw9yvdx9jaw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1be388cc-5956-47f9-8bef-402d430f0b36</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-21T17:50:12.127</Modified>
+      <Modified>2017-01-28T11:23:09.078</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Truudus.exe">
       <PackagePath>entrypoint\Truudus.exe</PackagePath>
-      <Modified>2017-01-21T17:50:11.021</Modified>
+      <Modified>2017-01-28T11:22:59.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -548,20 +548,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Truudus.xr.xml">
       <PackagePath>Truudus.xr.xml</PackagePath>
-      <Modified>2017-01-21T17:41:34.026</Modified>
+      <Modified>2017-01-28T11:22:59.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-12-14T07:12:14.056</Modified>
+      <Modified>2017-01-23T14:09:26.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-21T17:50:11.711</Modified>
+      <Modified>2017-01-28T11:23:07.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Core\Truudus.exe">
       <PackagePath>Truudus.exe</PackagePath>
-      <Modified>2017-01-21T17:50:12.121</Modified>
+      <Modified>2017-01-28T11:23:09.063</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

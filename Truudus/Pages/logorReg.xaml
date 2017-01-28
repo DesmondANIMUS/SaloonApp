@@ -67,12 +67,12 @@
 
 
             <Button x:Name="login" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Stretch" Content="Log In"
+                    HorizontalAlignment="Stretch" Content="Sign In"
                     Background="White" FontSize="30"
                     Click="login_Click"/>
 
 
-            <Button x:Name="register" Content="Join In" 
+            <Button x:Name="register" Content="Sign Up" 
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" FontSize="30"
                     Background="Teal" Foreground="White"

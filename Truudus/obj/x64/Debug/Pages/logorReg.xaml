@@ -8,8 +8,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.4*"/>
@@ -25,8 +30,17 @@
                    Text="" HorizontalAlignment="Stretch"
                    VerticalAlignment="Center" TextAlignment="Center"/>
 
+        <TextBlock Text="Username" Margin="0,0,0,20" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
+
         <TextBox x:ConnectionId='2' x:Name="username" Grid.Column="1"
                  Style="{StaticResource textStyle}"/>
+
+        <TextBlock Text="Password" Grid.Row="1" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
 
         <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="70"
                    Text="" HorizontalAlignment="Stretch" Grid.Row="1"
@@ -35,24 +49,40 @@
         <PasswordBox x:ConnectionId='3' x:Name="passBox" Grid.Row="1"                      
                      Grid.Column="1" Style="{StaticResource passStyle}"/>
 
-        <Button x:ConnectionId='4' x:Name="login" Grid.Row="2" VerticalAlignment="Center"
-                HorizontalAlignment="Stretch" Content="" FontSize="100"
-                FontFamily="Segoe MDL2 Assets" Background="White"
-                Grid.ColumnSpan="2"                    />
-
-
-        <Button x:ConnectionId='5' x:Name="register" Content="Create an Account" 
-                Grid.Row="3" HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch" FontSize="25"
-                Background="Teal" Foreground="White"
-                Grid.ColumnSpan="2"                       />
-
-        <Button x:ConnectionId='6' x:Name="goBack" Content="" 
-                VerticalAlignment="Top" 
+        <Button x:ConnectionId='4' x:Name="goBack" Content="" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
                 FontFamily="Segoe MDL2 Assets"
                 Background="Transparent"
-                                    />
+                                    
+                FontSize="20" FontWeight="Bold"/>
 
+        
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button x:ConnectionId='5' x:Name="login" VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch" Content="Log In"
+                    Background="White" FontSize="30"
+                                       />
+
+
+            <Button x:ConnectionId='6' x:Name="register" Content="Sign Up" 
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch" FontSize="30"
+                    Background="Teal" Foreground="White"
+                    Grid.Column="1"                       />
+
+            <ProgressRing x:ConnectionId='7' x:Name="welcomeRing"                      
+                          VerticalAlignment="Stretch" 
+                          HorizontalAlignment="Stretch"
+                          Margin="40,20,40,20"/>
+        </Grid>
     </Grid>
 </Page>
 

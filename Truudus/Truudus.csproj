@@ -116,9 +116,6 @@
     <Compile Include="Pages\logorReg.xaml.cs">
       <DependentUpon>logorReg.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\makeComment.xaml.cs">
-      <DependentUpon>makeComment.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\personReg.xaml.cs">
       <DependentUpon>personReg.xaml</DependentUpon>
     </Compile>
@@ -174,10 +171,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\logorReg.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\makeComment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

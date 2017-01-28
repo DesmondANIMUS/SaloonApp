@@ -64,8 +64,10 @@
         <TextBox x:ConnectionId='3' x:Name="cityBox" Grid.Column="1" Grid.Row="3"
                  Style="{StaticResource textStyle}"/>
 
-        <TextBox x:ConnectionId='4' x:Name="stateBox" Grid.Column="1" Grid.Row="4"
-                 Style="{StaticResource textStyle}"/>
+        <ComboBox x:ConnectionId='4' x:Name="stateBox" Grid.Column="1" Grid.Row="4"
+                  VerticalAlignment="Center" Margin="50,0,50,0"
+                  HorizontalAlignment="Stretch"
+                                                              />
 
         <TextBox x:ConnectionId='5' x:Name="pinBox" Grid.Column="1" Grid.Row="5"
                  Style="{StaticResource textStyle}"/>

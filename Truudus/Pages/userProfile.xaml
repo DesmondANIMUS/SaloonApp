@@ -69,13 +69,13 @@
 
         <Button x:Name="SaloonSearchBut"  Grid.Column="1"
                 Style="{StaticResource buttonStyle}" 
-                Grid.Row="3" Content="" VerticalAlignment="Stretch"
+                Grid.Row="3" Content="" VerticalAlignment="Stretch"
                 Background="Silver" Click="SaloonSearchBut_Click"/>
 
         <Button x:Name="logoutBut" Style="{StaticResource buttonStyle}"
                 Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Right" FontSize="20"
-                Content="Logout" FontFamily="Default"
+                Content="Sign Out" FontFamily="Default"
                 Click="logoutBut_Click"/>
 
         <ProgressRing x:Name="proRing" Grid.Row="1"

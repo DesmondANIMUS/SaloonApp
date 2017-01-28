@@ -10,7 +10,7 @@
   <Identity Name="1be388cc-5956-47f9-8bef-402d430f0b36" Publisher="CN=Desmond" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="1be388cc-5956-47f9-8bef-402d430f0b36" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Sassy Saloons</DisplayName>
+    <DisplayName>Truudus</DisplayName>
     <PublisherDisplayName>Desmond</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,6 +30,7 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />

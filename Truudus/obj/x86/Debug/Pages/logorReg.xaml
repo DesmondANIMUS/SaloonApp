@@ -67,12 +67,12 @@
 
 
             <Button x:ConnectionId='5' x:Name="login" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Stretch" Content="Log In"
+                    HorizontalAlignment="Stretch" Content="Sign In"
                     Background="White" FontSize="30"
                                        />
 
 
-            <Button x:ConnectionId='6' x:Name="register" Content="Join In" 
+            <Button x:ConnectionId='6' x:Name="register" Content="Sign Up" 
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" FontSize="30"
                     Background="Teal" Foreground="White"

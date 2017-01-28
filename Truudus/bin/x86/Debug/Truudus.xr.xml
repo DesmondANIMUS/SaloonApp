@@ -30,10 +30,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Style" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="FontSize" />
@@ -93,6 +93,12 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Truudus.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Truudus.Pages.commonRegister" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
@@ -102,7 +108,6 @@
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Truudus.Pages.logorReg" />
-    <RootType FullName="Truudus.Pages.makeComment" />
     <RootType FullName="Truudus.Pages.personReg" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
@@ -117,6 +122,13 @@
       <RootMethod Name="SetHorizontalScrollBarVisibility" />
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Maximum" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">

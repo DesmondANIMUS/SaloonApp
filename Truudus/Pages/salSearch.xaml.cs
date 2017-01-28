@@ -70,6 +70,7 @@ namespace Truudus.Pages
                         {
                             var dialog = new MessageDialog("Search results inconclusive :(");
                             await dialog.ShowAsync();
+                            await SearchCall.GetSaloonsAsync(searchedSaloons);
                         }
                     }
                 } 
@@ -78,6 +79,7 @@ namespace Truudus.Pages
                 {
                     var dialog = new MessageDialog("No internet, no gps :(");
                     await dialog.ShowAsync();
+                    await SearchCall.GetSaloonsAsync(searchedSaloons);
                 }               
             }
 

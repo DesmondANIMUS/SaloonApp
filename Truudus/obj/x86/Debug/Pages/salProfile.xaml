@@ -66,7 +66,7 @@
         <Button x:ConnectionId='10' x:Name="logoutBut" Style="{StaticResource buttonStyle}"
                 Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Right" FontSize="20"
-                Content="Logout" FontFamily="Default"
+                Content="Sign Out" FontFamily="Default"
                                        />
 
         <ProgressRing x:ConnectionId='11' x:Name="proRing" Grid.Row="1"
@@ -84,10 +84,12 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:ConnectionId='12' x:Name="moreButton" Style="{StaticResource buttonStyle}"
+            <Button x:ConnectionId='12' x:Name="moreButton" 
+                    Style="{StaticResource buttonStyle}"
                     Background="Teal" Foreground="White"
-                    Content=""                         
-                    Grid.Column="1"/>
+                    Content="About Us"                         
+                    Grid.Column="1" FontFamily="Default"
+                    FontSize="23px"/>
 
             <Button x:ConnectionId='13' x:Name="commentButton" Style="{StaticResource buttonStyle}"
                 Grid.Column="2" Content=""                            />

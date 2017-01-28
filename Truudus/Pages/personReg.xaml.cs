@@ -48,7 +48,8 @@ namespace Truudus.Pages
             try
             {
                 var response = await CommonCall.RegisterYourselfAsync(par, null, persona);                
-                Frame.Navigate(typeof(logorReg), par.TypeUser);
+                if (response.response.Equals("Success"))
+                    Frame.Navigate(typeof(logorReg), par.TypeUser);                
             }
 
             catch (Exception) { }

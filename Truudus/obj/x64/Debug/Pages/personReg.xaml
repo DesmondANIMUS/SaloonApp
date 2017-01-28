@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -29,7 +36,7 @@
                    FontSize="30" Style="{StaticResource fontStyle}"
                    Grid.Row="2"/>
 
-        <TextBlock Text="Sex" FontFamily="Default"
+        <TextBlock Text="Email" FontFamily="Default"
                    Style="{StaticResource fontStyle}"
                    Grid.Row="3" FontSize="30"/>
 
@@ -39,21 +46,25 @@
         <TextBox x:ConnectionId='2' x:Name="lname" Grid.Column="1" Grid.Row="2"
                  Style="{StaticResource textStyle}"/>
 
-        <ComboBox x:ConnectionId='3' x:Name="sexComboSe" Grid.Column="1"
-                  Grid.Row="3" VerticalAlignment="Stretch"
-                  HorizontalAlignment="Stretch" 
-                  Margin="50,50,50,50" 
-                                                                />
+        <TextBox x:ConnectionId='3' x:Name="emailBox" Grid.Column="1" Grid.Row="3"
+                 Style="{StaticResource textStyle}"/>
+
 
         <Button x:ConnectionId='4' x:Name="goNext" Style="{StaticResource buttonStyle}"
-                Content="Welcome" FontFamily="Default"
+                Content="Submit" FontFamily="Default"
                 Grid.ColumnSpan="2" Background="Teal"
-                Foreground="White" 
-                Grid.Row="4"                     />
+                Foreground="White" Margin="50,35,50,35" 
+                Grid.Row="4" FontSize="30"                     />
 
         <Button x:ConnectionId='5' x:Name="goBack" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2"                     
                 Background="Transparent"/>
+
+        <ProgressRing x:ConnectionId='6' x:Name="welcomeRing" Grid.Row="4"
+                      Grid.ColumnSpan="2" 
+                      VerticalAlignment="Stretch" 
+                      HorizontalAlignment="Stretch"
+                      Margin="120,20,130,20"/>
 
     </Grid>
 </Page>

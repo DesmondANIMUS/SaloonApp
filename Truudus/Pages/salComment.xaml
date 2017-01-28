@@ -82,11 +82,10 @@
 
         </ListView>
 
-
-
-        <TextBox x:Name="starField" FontSize="15" Grid.ColumnSpan="2"
-                 VerticalAlignment="Top" Margin="20,20,20,0"
-                 Visibility="Collapsed"/>
+        <Slider x:Name="starField" FontSize="15" Grid.ColumnSpan="2"
+                VerticalAlignment="Top" Margin="20,20,20,0"
+                Visibility="Collapsed"
+                Maximum="5"/>
 
         <TextBox x:Name="commentBox" Grid.ColumnSpan="2"                 
                  Margin="20,100,20,30" FontSize="20"

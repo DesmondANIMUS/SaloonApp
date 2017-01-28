@@ -17,7 +17,7 @@ namespace Truudus.Managers
         public static async Task<CommonResponse> RegisterYourselfAsync(CheckingType check = null, AllSaloonInfo saloonInfo = null, 
             PersonInfo perInfo = null, LoginInfo log = null)
         {
-            var http = new HttpClient();
+            var http = new HttpClient();            
 
             if (saloonInfo != null)
             {
@@ -56,7 +56,7 @@ namespace Truudus.Managers
                 URI = Constants.LOGIN;
             }
 
-            var response = await http.PostAsync(URI, parameters);
+            var response = await http.PostAsync(URI, parameters);            
             var result = await response.Content.ReadAsStringAsync();
             var serializer = new DataContractJsonSerializer(typeof(CommonResponse));
             var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
