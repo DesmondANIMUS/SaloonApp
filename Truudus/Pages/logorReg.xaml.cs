@@ -17,7 +17,7 @@ namespace Truudus.Pages
     {
         LoginInfo log;
         CommonResponse response;
-        string type, privateKey, publicKey;
+        string type, privateKey, publicKey, otp;
         static internal bool intent;
 
         public logorReg()
@@ -37,6 +37,39 @@ namespace Truudus.Pages
         private void goBack_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void validate_Click(object sender, RoutedEventArgs e)
+        {
+            if (otp.Equals(otpBOX.Text))
+            {
+                welcomeRing.Visibility = Visibility.Visible;
+                welcomeRing.IsActive = true;
+                login.Content = "";
+
+                try
+                {
+                    var response = OTPCall.VerifyYourOTPAsync(null, null, log);
+                }
+                catch (Exception) { }
+                finally
+                {
+                    welcomeRing.Visibility = Visibility.Collapsed;
+                    welcomeRing.IsActive = false;
+                    login.Content = "Sign In";
+                    otpBOX.Visibility = Visibility.Collapsed;
+
+                    login.Visibility = Visibility.Visible;
+                    validate.Visibility = Visibility.Collapsed;
+                    passBox.Visibility = Visibility.Visible;
+                    username.IsEnabled = true;
+                    pasOtp.Text = "Password";                    
+                }
+            }
+            else
+            {
+                ToastyTaost.ShowToastNotification("Invalid OTP", "Please Try Again");                
+            }
         }
 
         private void register_Click(object sender, RoutedEventArgs e)
@@ -79,6 +112,28 @@ namespace Truudus.Pages
                         intent = true;
                     }
                 }
+
+                else if (response.response.Equals("Invalid Account"))
+                {
+                    ToastyTaost.ShowToastNotification("Invalid Account", "Please Validate Your Account");
+
+                    login.Visibility = Visibility.Collapsed;
+                    validate.Visibility = Visibility.Visible;
+                    username.IsEnabled = false;
+                    passBox.Visibility = Visibility.Collapsed;
+                    pasOtp.Text = "OTP";
+                    otpBOX.Visibility = Visibility.Visible;
+
+                    try
+                    {
+                        otp = RandomNumber.RandomDigits(4);
+                        var response = OTPCall.VerifyYourOTPAsync(null, otp, log);
+                    }
+
+                    catch (Exception) { }
+                }
+
+                else { ToastyTaost.ShowToastNotification("Try Again", "Wrong Username or Password"); }
             }
 
             catch (Exception) { }
@@ -88,7 +143,7 @@ namespace Truudus.Pages
                 welcomeRing.Visibility = Visibility.Collapsed;
                 welcomeRing.IsActive = false;
                 //login.Content = "";
-                login.Content = "Log In";
+                login.Content = "Sign In";
             }
         }
         

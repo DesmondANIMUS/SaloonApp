@@ -1,0 +1,5 @@
+"/t:Truudus.Models.CommentsResponse,Truudus,json"
+"/t:Truudus.Models.CommonResponse,Truudus,json"
+"/t:Truudus.Models.CommonUserResponse,Truudus,json"
+"/t:Truudus.Models.GoogleRevGeoResponse,Truudus,json"
+"/t:Truudus.Models.SaloonResponse,Truudus,json"

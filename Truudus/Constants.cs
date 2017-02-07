@@ -20,6 +20,7 @@
         private const string login                  = baseUrl + "login";
         private const string incom                  = baseUrl + "salComment";
         private const string geoco                  = geobase + apiKey;
+        private const string verif                  = baseUrl + "verify";
 
         internal const string SALREG                = salreg;
         internal const string SALCOM                = salcom;
@@ -27,6 +28,7 @@
         internal const string LOGIN                 = login;
         internal const string INCOM                 = incom;
         internal const string GEOCO                 = geoco;
+        internal const string VERIF                 = verif;
         #endregion
 
         #region Get them

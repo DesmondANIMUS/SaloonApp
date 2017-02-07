@@ -29,6 +29,7 @@ namespace Truudus.Managers
 
                                                                new KeyValuePair<string, string>("sname", saloonInfo.SaloonName),
                                                                new KeyValuePair<string, string>("desc", saloonInfo.ShortDesc),
+                                                               new KeyValuePair<string, string>("otp", saloonInfo.OTP),
                                                                new KeyValuePair<string, string>("email", saloonInfo.Email)});
                 URI = Constants.SALREG;
             }
@@ -44,6 +45,7 @@ namespace Truudus.Managers
 
                                                                new KeyValuePair<string, string>("fname", perInfo.FirstName),
                                                                new KeyValuePair<string, string>("lname", perInfo.LastName),
+                                                               new KeyValuePair<string, string>("otp", perInfo.OTP),
                                                                new KeyValuePair<string, string>("email", perInfo.Email)});
                 URI = Constants.REGUSE;
             }

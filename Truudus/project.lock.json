@@ -22353,7 +22353,7 @@
       "projectName": "Truudus",
       "projectPath": "C:\\Users\\Desmond\\Documents\\Visual Studio 2017\\Projects\\Universal\\Truudus\\Truudus\\Truudus.csproj",
       "projectJsonPath": "C:\\Users\\Desmond\\Documents\\Visual Studio 2017\\Projects\\Universal\\Truudus\\Truudus\\project.json",
-      "outputType": "UAP"
+      "projectStyle": "ProjectJson"
     },
     "dependencies": {
       "Microsoft.Net.Http": "2.2.29",

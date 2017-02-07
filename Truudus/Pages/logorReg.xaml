@@ -37,7 +37,8 @@
         <TextBox x:Name="username" Grid.Column="1"
                  Style="{StaticResource textStyle}"/>
 
-        <TextBlock Text="Password" Grid.Row="1" 
+        <TextBlock x:Name="pasOtp"
+                   Text="Password" Grid.Row="1" 
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"
                    Margin="0,0,0,20"/>
@@ -48,6 +49,10 @@
 
         <PasswordBox x:Name="passBox" Grid.Row="1"                      
                      Grid.Column="1" Style="{StaticResource passStyle}"/>
+
+        <TextBox x:Name="otpBOX" Grid.Column="1" Grid.Row="1"
+                 Style="{StaticResource textStyle}"
+                 Visibility="Collapsed"/>
 
         <Button x:Name="goBack" Content="" 
                 VerticalAlignment="Top"
@@ -71,6 +76,10 @@
                     Background="White" FontSize="30"
                     Click="login_Click"/>
 
+            <Button x:Name="validate" VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch" Content="Validate"
+                    Background="White" FontSize="30" 
+                    Visibility="Collapsed" Click="validate_Click"/>
 
             <Button x:Name="register" Content="Sign Up" 
                     HorizontalAlignment="Stretch"

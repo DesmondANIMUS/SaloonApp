@@ -1,6 +1,5 @@
 ﻿using Truudus.Managers;
 using System;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -44,12 +43,29 @@ namespace Truudus.Pages
             persona.FirstName = fname.Text;
             persona.LastName = lname.Text;
             persona.Email = emailBox.Text;
+            persona.OTP = RandomNumber.RandomDigits(4);
 
             try
             {
                 var response = await CommonCall.RegisterYourselfAsync(par, null, persona);                
                 if (response.response.Equals("Success"))
-                    Frame.Navigate(typeof(logorReg), par.TypeUser);                
+                {
+                    ToastyTaost.ShowToastNotification("OTP", "OTP sent as E-Mail");
+
+                    FirstName.Visibility = Visibility.Collapsed;
+                    LastName.Visibility = Visibility.Collapsed;
+                    Emailia.Visibility = Visibility.Collapsed;
+                    fname.Visibility = Visibility.Collapsed;
+                    lname.Visibility = Visibility.Collapsed;
+                    emailBox.Visibility = Visibility.Collapsed;
+
+                    goBack.Visibility = Visibility.Collapsed;
+                    goNext.Visibility = Visibility.Collapsed;
+
+                    otpBLOCK.Visibility = Visibility.Visible;
+                    otpbutton.Visibility = Visibility.Visible;
+                    otpdata.Visibility = Visibility.Visible;
+                }
             }
 
             catch (Exception) { }
@@ -58,7 +74,45 @@ namespace Truudus.Pages
             {
                 welcomeRing.Visibility = Visibility.Collapsed;
                 welcomeRing.IsActive = false;
-                goNext.Content = "Welcome";
+                goNext.Content = "Submit";
+            }
+        }
+
+        private async void otpbutton_Click(object sender, RoutedEventArgs e)
+        {            
+            if (otpdata.Text.Equals(persona.OTP))
+            {
+                welcomeRing.Visibility = Visibility.Visible;
+                welcomeRing.IsActive = true;
+
+                try
+                {
+                    var response = await OTPCall.VerifyYourOTPAsync(par);
+                    if (response.response.Equals("Success"))
+                        Frame.Navigate(typeof(logorReg), par.TypeUser);
+                }
+
+                catch (Exception) { }
+                finally
+                {
+
+                    FirstName.Visibility = Visibility.Visible;
+                    LastName.Visibility = Visibility.Visible;
+                    Emailia.Visibility = Visibility.Visible;
+                    fname.Visibility = Visibility.Visible;
+                    lname.Visibility = Visibility.Visible;
+                    emailBox.Visibility = Visibility.Visible;
+
+                    goBack.Visibility = Visibility.Visible;
+                    goNext.Visibility = Visibility.Visible;
+
+                    otpBLOCK.Visibility = Visibility.Collapsed;
+                    otpbutton.Visibility = Visibility.Collapsed;
+                    otpdata.Visibility = Visibility.Collapsed;
+
+                    welcomeRing.Visibility = Visibility.Collapsed;
+                    welcomeRing.IsActive = false;
+                }
             }
         }
     }
@@ -68,5 +122,6 @@ namespace Truudus.Pages
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        public string OTP { get; set; }
     }
 }

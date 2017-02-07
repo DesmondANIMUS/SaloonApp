@@ -27,15 +27,18 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Name" FontFamily="Default" FontSize="40"
+        <TextBlock x:Name="nameingblock"
+                   Text="Name" FontFamily="Default" FontSize="40"
                    Style="{StaticResource fontStyle}"
                    Grid.Row="1"/>
 
-        <TextBlock Text="Email" FontFamily="Default"
+        <TextBlock x:Name="emaila"
+                   Text="Email" FontFamily="Default"
                    FontSize="40" Style="{StaticResource fontStyle}"
                    Grid.Row="2"/>
 
-        <TextBlock Text="About" FontFamily="Default"
+        <TextBlock x:Name="aboutBlock"
+                   Text="About" FontFamily="Default"
                    Style="{StaticResource fontStyle}"
                    Grid.Row="3" FontSize="40"/>
 
@@ -48,23 +51,49 @@
         <TextBox x:Name="shortDescbox" Grid.Column="1" Grid.Row="3"
                  VerticalAlignment="Stretch" Margin="50,20,50,20"
                  Style="{StaticResource textStyle}"/>
-
-        <Button x:Name="goNext" Style="{StaticResource buttonStyle}"
-                Margin="55,50,55,50" FontFamily="Default"
-                Grid.ColumnSpan="2" Background="Teal"
-                Foreground="White" FontSize="30"
-                Content="Submit"
-                Grid.Row="4" Click="goNext_Click"/>
-
+      
         <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2" Click="goBack_Click"
                 Background="Transparent"/>
+
+        <Button x:Name="submit" Style="{StaticResource buttonStyle}"
+                Margin="55,50,55,50" FontFamily="Default"
+                Grid.ColumnSpan="2" Background="Teal"
+                Foreground="White" FontSize="30"
+                Content="Submit" Click="submit_Click"
+                Grid.Row="4" />
 
         <ProgressRing x:Name="welcomeRing" Grid.Row="4"
                       Grid.ColumnSpan="2" 
                       VerticalAlignment="Stretch" 
                       HorizontalAlignment="Stretch"
                       Margin="120,30,130,30"/>
+
+
+                     <!--      OTP Part here      -->
+
+
+        <TextBlock x:Name="otpBLOCK" Text="Enter OTP Below"
+                   Grid.Row="0" Grid.ColumnSpan="2"
+                   FontSize="25" TextAlignment="Center"
+                   Margin="50,0,50,0" FontWeight="Medium"
+                   VerticalAlignment="Bottom"
+                   
+                   Visibility="Collapsed"/>
+
+        <TextBox x:Name="otpdata" Grid.Row="2" Grid.ColumnSpan="2" 
+                 Margin="50,0,50,130" FontSize="30"                  
+                 TextAlignment="Center" Grid.RowSpan="2"
+                 
+                 Visibility="Collapsed"/>
+
+        <Button x:Name="otpbutton" Grid.Row="3" Content="Submit"
+                Grid.ColumnSpan="2" Margin="100,0,100,0"
+                HorizontalAlignment="Stretch" FontSize="25"
+                Background="Teal" Foreground="White"
+                VerticalAlignment="Bottom" Click="otpbutton_Click"
+                
+                Visibility="Collapsed"/>
 
     </Grid>
 </Page>

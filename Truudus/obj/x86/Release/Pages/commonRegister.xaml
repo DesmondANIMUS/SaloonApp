@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="Truudus.Pages.commonRegister"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="" Style="{StaticResource fontStyle}"
+                   Grid.Row="1"/>
+
+        <TextBlock Text="Username" Grid.Row="1" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
+
+        <TextBlock Text="" Style="{StaticResource fontStyle}"
+                   Grid.Row="2"/>
+
+        <TextBlock Text="City" FontFamily="Default"
+                   Style="{StaticResource fontStyle}"
+                   Grid.Row="3"/>
+
+        <TextBlock Text="State" FontFamily="Default"
+                   Style="{StaticResource fontStyle}"
+                   Grid.Row="4"/>
+
+        <TextBlock Text="Pin" FontFamily="Default"
+                   Style="{StaticResource fontStyle}"
+                   Grid.Row="5"/>
+
+        <PasswordBox x:ConnectionId='1' x:Name="passBox" Grid.Row="2" Grid.Column="1"
+                     Style="{StaticResource passStyle}"/>
+        
+        <TextBlock Text="Password" Grid.Row="2" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"/>
+
+        <TextBox x:ConnectionId='2' x:Name="usernameBox" Grid.Column="1" Grid.Row="1"
+                 Style="{StaticResource textStyle}"/>
+
+        <TextBox x:ConnectionId='3' x:Name="cityBox" Grid.Column="1" Grid.Row="3"
+                 Style="{StaticResource textStyle}"/>
+
+        <ComboBox x:ConnectionId='4' x:Name="stateBox" Grid.Column="1" Grid.Row="4"
+                  VerticalAlignment="Center" Margin="50,0,50,0"
+                  HorizontalAlignment="Stretch"
+                                                              />
+
+        <TextBox x:ConnectionId='5' x:Name="pinBox" Grid.Column="1" Grid.Row="5"
+                 Style="{StaticResource textStyle}"/>
+
+        <Button x:ConnectionId='6' x:Name="goNext" Style="{StaticResource buttonStyle}"
+                Content="" Grid.ColumnSpan="2"
+                Grid.Row="6"                     />
+
+        <Button x:ConnectionId='7' x:Name="goBack" Style="{StaticResource buttonStyle}"
+                Content=""                     />
+
+    </Grid>
+</Page>
+
