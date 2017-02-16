@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -37,6 +37,10 @@
         <TextBox x:Name="username" Grid.Column="1"
                  Style="{StaticResource textStyle}"/>
 
+
+        <PasswordBox x:Name="passBox" Grid.Row="1"                      
+                     Grid.Column="1" Style="{StaticResource passStyle}"/>
+
         <TextBlock x:Name="pasOtp"
                    Text="Password" Grid.Row="1" 
                    VerticalAlignment="Bottom"
@@ -47,22 +51,9 @@
                    Text="" HorizontalAlignment="Stretch" Grid.Row="1"
                    VerticalAlignment="Center" TextAlignment="Center"/>
 
-        <PasswordBox x:Name="passBox" Grid.Row="1"                      
-                     Grid.Column="1" Style="{StaticResource passStyle}"/>
-
         <TextBox x:Name="otpBOX" Grid.Column="1" Grid.Row="1"
                  Style="{StaticResource textStyle}"
                  Visibility="Collapsed"/>
-
-        <Button x:Name="goBack" Content="" 
-                VerticalAlignment="Top"
-                HorizontalAlignment="Stretch"
-                FontFamily="Segoe MDL2 Assets"
-                Background="Transparent"
-                Click="goBack_Click"
-                FontSize="20" FontWeight="Bold"/>
-
-        
 
         <Grid Grid.Row="2" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
@@ -70,10 +61,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-
             <Button x:Name="login" VerticalAlignment="Stretch"
                     HorizontalAlignment="Stretch" Content="Sign In"
-                    Background="White" FontSize="30"
+                    Background="LightBlue" FontSize="30"
                     Click="login_Click"/>
 
             <Button x:Name="validate" VerticalAlignment="Stretch"
@@ -84,7 +74,7 @@
             <Button x:Name="register" Content="Sign Up" 
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" FontSize="30"
-                    Background="Teal" Foreground="White"
+                    Background="DarkBlue" Foreground="White"
                     Grid.Column="1" Click="register_Click"/>
 
             <ProgressRing x:Name="welcomeRing"                      
@@ -92,5 +82,14 @@
                           HorizontalAlignment="Stretch"
                           Margin="40,20,40,20"/>
         </Grid>
+
+        <Button x:Name="goBack" Content="" 
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
+                FontFamily="Segoe MDL2 Assets"
+                Background="Transparent"
+                Click="goBack_Click"
+                FontSize="20" FontWeight="Bold"/>
+
     </Grid>
 </Page>

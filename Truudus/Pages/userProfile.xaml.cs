@@ -29,8 +29,7 @@ namespace Truudus.Pages
             city.Visibility = Visibility.Collapsed;
             pin.Visibility = Visibility.Collapsed;
             state.Visibility = Visibility.Collapsed;
-            userPic.Visibility = Visibility.Collapsed;
-            UserProfileBut.Visibility = Visibility.Collapsed;
+            userPic.Visibility = Visibility.Collapsed;            
             SaloonSearchBut.Visibility = Visibility.Collapsed;            
 
             try
@@ -54,8 +53,7 @@ namespace Truudus.Pages
                 city.Visibility = Visibility.Visible;
                 state.Visibility = Visibility.Visible;
                 pin.Visibility = Visibility.Visible;
-                userPic.Visibility = Visibility.Visible;
-                UserProfileBut.Visibility = Visibility.Visible;
+                userPic.Visibility = Visibility.Visible;                
                 SaloonSearchBut.Visibility = Visibility.Visible;
             }
         }

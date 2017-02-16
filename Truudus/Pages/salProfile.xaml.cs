@@ -29,14 +29,14 @@ namespace Truudus.Pages
             proRing.Visibility = Visibility.Visible;
             proRing.IsActive = true;
 
-            NameBlock.Visibility = Visibility.Collapsed;
-            city.Visibility = Visibility.Collapsed;
-            state.Visibility = Visibility.Collapsed;
-            pin.Visibility = Visibility.Collapsed;
-            userPic.Visibility = Visibility.Collapsed;
-            searchButton.Visibility = Visibility.Collapsed;
-            moreButton.Visibility = Visibility.Collapsed;
-            commentButton.Visibility = Visibility.Collapsed;
+            //NameBlock.Visibility = Visibility.Collapsed;
+            //city.Visibility = Visibility.Collapsed;
+            //state.Visibility = Visibility.Collapsed;
+            //pin.Visibility = Visibility.Collapsed;
+            //userPic.Visibility = Visibility.Collapsed;
+            //searchButton.Visibility = Visibility.Collapsed;
+            //moreButton.Visibility = Visibility.Collapsed;
+            //commentButton.Visibility = Visibility.Collapsed;
 
             if (logorReg.intent == false)
                 logoutBut.Visibility = Visibility.Collapsed;
@@ -58,14 +58,14 @@ namespace Truudus.Pages
                 proRing.Visibility = Visibility.Collapsed;
                 proRing.IsActive = false;
 
-                NameBlock.Visibility = Visibility.Visible;
-                state.Visibility = Visibility.Visible;
-                city.Visibility = Visibility.Visible;
-                pin.Visibility = Visibility.Visible;
-                userPic.Visibility = Visibility.Visible;
-                searchButton.Visibility = Visibility.Visible;
-                moreButton.Visibility = Visibility.Visible;
-                commentButton.Visibility = Visibility.Visible;         
+                //NameBlock.Visibility = Visibility.Visible;
+                //state.Visibility = Visibility.Visible;
+                //city.Visibility = Visibility.Visible;
+                //pin.Visibility = Visibility.Visible;
+                //userPic.Visibility = Visibility.Visible;
+                //searchButton.Visibility = Visibility.Visible;
+                //moreButton.Visibility = Visibility.Visible;
+                //commentButton.Visibility = Visibility.Visible;         
             }
         }
 

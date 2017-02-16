@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -62,21 +62,18 @@
                    Grid.Row="1" VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"/>
 
-        <Button x:Name="UserProfileBut" 
+        <Button x:Name="SaloonSearchBut"
                 Style="{StaticResource buttonStyle}" 
-                Grid.Row="3" Content="" VerticalAlignment="Stretch"
-                Background="Teal" Foreground="White"/>
-
-        <Button x:Name="SaloonSearchBut"  Grid.Column="1"
-                Style="{StaticResource buttonStyle}" 
-                Grid.Row="3" Content="" VerticalAlignment="Stretch"
-                Background="Silver" Click="SaloonSearchBut_Click"/>
+                Grid.ColumnSpan="2" Grid.Row="3" 
+                Content="" VerticalAlignment="Stretch"
+                Background="DarkBlue" Foreground="White"
+                Click="SaloonSearchBut_Click"/>
 
         <Button x:Name="logoutBut" Style="{StaticResource buttonStyle}"
                 Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Right" FontSize="20"
                 Content="Sign Out" FontFamily="Default"
-                Click="logoutBut_Click"/>
+                Click="logoutBut_Click" Background="LightBlue"/>
 
         <ProgressRing x:Name="proRing" Grid.Row="1"
                       VerticalAlignment="Stretch"

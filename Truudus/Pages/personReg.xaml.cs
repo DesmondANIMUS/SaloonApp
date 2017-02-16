@@ -66,6 +66,7 @@ namespace Truudus.Pages
                     otpbutton.Visibility = Visibility.Visible;
                     otpdata.Visibility = Visibility.Visible;
                 }
+                else { ToastyTaost.ShowToastNotification("Failed :(", response.response); }                
             }
 
             catch (Exception) { }

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -67,7 +67,7 @@
                 Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Right" FontSize="20"
                 Content="Sign Out" FontFamily="Default"
-                                       />
+                                        Background="LightBlue"/>
 
         <ProgressRing x:ConnectionId='11' x:Name="proRing" Grid.Row="1"
                       VerticalAlignment="Stretch"
@@ -86,16 +86,18 @@
 
             <Button x:ConnectionId='12' x:Name="moreButton" 
                     Style="{StaticResource buttonStyle}"
-                    Background="Teal" Foreground="White"
+                    Background="DarkBlue" Foreground="White"
                     Content="About Us"                         
                     Grid.Column="1" FontFamily="Default"
                     FontSize="23px"/>
 
             <Button x:ConnectionId='13' x:Name="commentButton" Style="{StaticResource buttonStyle}"
-                Grid.Column="2" Content=""                            />
+                Grid.Column="2" Content=""                            
+                    Background="LightBlue"/>
 
             <Button x:ConnectionId='14' x:Name="searchButton" Style="{StaticResource buttonStyle}"                
-                    Content=""                            />
+                    Content=""                            
+                    Background="LightBlue"/>
 
         </Grid>
 

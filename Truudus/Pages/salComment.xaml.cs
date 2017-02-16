@@ -56,8 +56,7 @@ namespace Truudus.Pages
 
         private void giveStar_Click(object sender, RoutedEventArgs e)
         {
-            moreButton.Visibility = Visibility.Collapsed;
-            commentButton.Visibility = Visibility.Collapsed;
+            moreButton.Visibility = Visibility.Collapsed;            
             starList.Visibility = Visibility.Collapsed;
             commentsList.Visibility = Visibility.Collapsed;
             giveStar.Visibility = Visibility.Collapsed;
@@ -88,8 +87,7 @@ namespace Truudus.Pages
             makeCommentButton.Visibility = Visibility.Collapsed;
             back.Visibility = Visibility.Collapsed;
 
-            moreButton.Visibility = Visibility.Visible;
-            commentButton.Visibility = Visibility.Visible;
+            moreButton.Visibility = Visibility.Visible;            
             starList.Visibility = Visibility.Visible;
             commentsList.Visibility = Visibility.Visible;
             giveStar.Visibility = Visibility.Visible;
@@ -102,8 +100,7 @@ namespace Truudus.Pages
             makeCommentButton.Visibility = Visibility.Collapsed;
             back.Visibility = Visibility.Collapsed;
 
-            moreButton.Visibility = Visibility.Visible;
-            commentButton.Visibility = Visibility.Visible;
+            moreButton.Visibility = Visibility.Visible;            
             starList.Visibility = Visibility.Visible;
             commentsList.Visibility = Visibility.Visible;
             giveStar.Visibility = Visibility.Visible;

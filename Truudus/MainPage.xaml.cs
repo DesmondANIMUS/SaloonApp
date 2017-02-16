@@ -21,12 +21,12 @@ namespace Truudus
 
         private void personButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.logorReg), "EndUser");
+            Frame.Navigate(typeof(logorReg), "EndUser");
         }
 
         private void saloonButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pages.logorReg), "Saloon");
+            Frame.Navigate(typeof(logorReg), "Saloon");
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

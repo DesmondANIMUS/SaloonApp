@@ -104,6 +104,7 @@
     <Compile Include="Managers\CommonCall.cs" />
     <Compile Include="Managers\CommonGettingUsersCall.cs" />
     <Compile Include="Managers\GoogleRevGeoCall.cs" />
+    <Compile Include="Managers\ImageManager.cs" />
     <Compile Include="Managers\LocationManagerCall.cs" />
     <Compile Include="Managers\OTPCall.cs" />
     <Compile Include="Managers\SearchCall.cs" />

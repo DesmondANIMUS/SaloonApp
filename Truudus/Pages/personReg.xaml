@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -52,10 +52,9 @@
         <TextBox x:Name="emailBox" Grid.Column="1" Grid.Row="3"
                  Style="{StaticResource textStyle}"/>
 
-
         <Button x:Name="goNext" Style="{StaticResource buttonStyle}"
                 Content="Submit" FontFamily="Default"
-                Grid.ColumnSpan="2" Background="Teal"
+                Grid.ColumnSpan="2" Background="DarkBlue"
                 Foreground="White" Margin="50,35,50,35" 
                 Grid.Row="4" FontSize="30" Click="goNext_Click"/>
 
@@ -67,7 +66,7 @@
                       Grid.ColumnSpan="2" 
                       VerticalAlignment="Stretch" 
                       HorizontalAlignment="Stretch"
-                      Margin="120,20,130,20"/>
+                      Margin="150,45,150,45"/>
         
                       <!--      OTP Part here      -->
 
@@ -86,7 +85,7 @@
         <Button x:Name="otpbutton" Grid.Row="3" Content="Submit"
                 Grid.ColumnSpan="2" Margin="100,0,100,0"
                 HorizontalAlignment="Stretch" FontSize="25"
-                Background="Teal" Foreground="White"
+                Background="DarkBlue" Foreground="White"
                 Click="otpbutton_Click" Visibility="Collapsed"/>
 
     </Grid>

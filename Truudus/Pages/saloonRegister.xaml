@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="White">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -51,23 +51,23 @@
         <TextBox x:Name="shortDescbox" Grid.Column="1" Grid.Row="3"
                  VerticalAlignment="Stretch" Margin="50,20,50,20"
                  Style="{StaticResource textStyle}"/>
-      
-        <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
-                Content="" Grid.ColumnSpan="2" Click="goBack_Click"
-                Background="Transparent"/>
 
         <Button x:Name="submit" Style="{StaticResource buttonStyle}"
                 Margin="55,50,55,50" FontFamily="Default"
-                Grid.ColumnSpan="2" Background="Teal"
+                Grid.ColumnSpan="2" Background="DarkBlue"
                 Foreground="White" FontSize="30"
                 Content="Submit" Click="submit_Click"
                 Grid.Row="4" />
+
+        <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
+                Content="" Grid.ColumnSpan="2" Click="goBack_Click"
+                Background="Transparent"/>
 
         <ProgressRing x:Name="welcomeRing" Grid.Row="4"
                       Grid.ColumnSpan="2" 
                       VerticalAlignment="Stretch" 
                       HorizontalAlignment="Stretch"
-                      Margin="120,30,130,30"/>
+                      Margin="150,50,150,55"/>
 
 
                      <!--      OTP Part here      -->

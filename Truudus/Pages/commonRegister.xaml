@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -51,15 +51,15 @@
                    Style="{StaticResource fontStyle}"
                    Grid.Row="5"/>
 
-        <PasswordBox x:Name="passBox" Grid.Row="2" Grid.Column="1"
-                     Style="{StaticResource passStyle}"/>
-        
         <TextBlock Text="Password" Grid.Row="2" 
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"/>
 
         <TextBox x:Name="usernameBox" Grid.Column="1" Grid.Row="1"
                  Style="{StaticResource textStyle}"/>
+
+        <PasswordBox x:Name="passBox" Grid.Row="2" Grid.Column="1"
+                     Style="{StaticResource passStyle}"/>
 
         <TextBox x:Name="cityBox" Grid.Column="1" Grid.Row="3"
                  Style="{StaticResource textStyle}"/>
@@ -70,14 +70,17 @@
                   SelectionChanged="stateBox_SelectionChanged"/>
 
         <TextBox x:Name="pinBox" Grid.Column="1" Grid.Row="5"
-                 Style="{StaticResource textStyle}"/>
+                 Style="{StaticResource textStyle}"
+                 />
 
         <Button x:Name="goNext" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2"
-                Grid.Row="6" Click="goNext_Click"/>
+                Grid.Row="6" Click="goNext_Click" Foreground="White"
+                Background="DarkBlue"/>
 
         <Button x:Name="goBack" Style="{StaticResource buttonStyle}"
-                Content="" Click="goBack_Click"/>
+                Content="" Click="goBack_Click"
+                Background="LightBlue"/>
 
     </Grid>
 </Page>

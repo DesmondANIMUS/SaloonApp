@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -28,18 +28,14 @@
         </Grid.ColumnDefinitions>
 
         <Button x:Name="moreButton" Style="{StaticResource buttonStyle}"
-                Grid.Row="2" FontSize="30"
-                Content="" Click="moreButton_Click"/>
-
-        <Button x:Name="commentButton" Style="{StaticResource buttonStyle}"
-                Grid.Row="2" Grid.Column="1"
-                Content="" FontSize="30"
-                Background="Teal" Foreground="White"/>
+                Grid.Row="2" FontSize="30" Grid.ColumnSpan="2"
+                Content="" Click="moreButton_Click"
+                Background="DarkBlue" Foreground="White"/>
 
         <Button x:Name="giveStar" Click="giveStar_Click"
                 Content="" FontSize="30" Grid.Row="1"
-                Grid.ColumnSpan="2" HorizontalAlignment="Center"
-                VerticalAlignment="Center" FontFamily="Segoe MDL2 Assets" 
+                Grid.ColumnSpan="2" HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" 
                 Background="Transparent"/>
 
         <ListView x:Name="commentsList"
@@ -94,14 +90,14 @@
         <Button x:Name="makeCommentButton" Grid.Row="2"                
                 Style="{StaticResource buttonStyle}"
                 FontFamily="Default" Foreground="White"
-                Background="Teal" Click="makeCommentButton_Click"
+                Background="DarkBlue" Click="makeCommentButton_Click"
                 Content="Comment" Grid.ColumnSpan="2"
                 Visibility="Collapsed"/>
 
         <Button x:Name="back" Content="" Click="back_Click"
                 Style="{StaticResource buttonStyle}"
                 Grid.Row="1" Grid.ColumnSpan="2"
-                Visibility="Collapsed"/>
+                Visibility="Collapsed" Background="LightBlue"/>
 
     </Grid>
 </Page>

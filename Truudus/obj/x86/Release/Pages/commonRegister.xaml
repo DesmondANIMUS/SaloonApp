@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightBlue">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -51,15 +51,15 @@
                    Style="{StaticResource fontStyle}"
                    Grid.Row="5"/>
 
-        <PasswordBox x:ConnectionId='1' x:Name="passBox" Grid.Row="2" Grid.Column="1"
-                     Style="{StaticResource passStyle}"/>
-        
         <TextBlock Text="Password" Grid.Row="2" 
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"/>
 
-        <TextBox x:ConnectionId='2' x:Name="usernameBox" Grid.Column="1" Grid.Row="1"
+        <TextBox x:ConnectionId='1' x:Name="usernameBox" Grid.Column="1" Grid.Row="1"
                  Style="{StaticResource textStyle}"/>
+
+        <PasswordBox x:ConnectionId='2' x:Name="passBox" Grid.Row="2" Grid.Column="1"
+                     Style="{StaticResource passStyle}"/>
 
         <TextBox x:ConnectionId='3' x:Name="cityBox" Grid.Column="1" Grid.Row="3"
                  Style="{StaticResource textStyle}"/>
@@ -70,14 +70,17 @@
                                                               />
 
         <TextBox x:ConnectionId='5' x:Name="pinBox" Grid.Column="1" Grid.Row="5"
-                 Style="{StaticResource textStyle}"/>
+                 Style="{StaticResource textStyle}"
+                 />
 
         <Button x:ConnectionId='6' x:Name="goNext" Style="{StaticResource buttonStyle}"
                 Content="" Grid.ColumnSpan="2"
-                Grid.Row="6"                     />
+                Grid.Row="6"                      Foreground="White"
+                Background="DarkBlue"/>
 
         <Button x:ConnectionId='7' x:Name="goBack" Style="{StaticResource buttonStyle}"
-                Content=""                     />
+                Content=""                     
+                Background="LightBlue"/>
 
     </Grid>
 </Page>
