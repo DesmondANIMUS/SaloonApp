@@ -125,7 +125,7 @@ namespace Truudus.Pages
 
                     try
                     {
-                        otp = RandomNumber.RandomDigits(4);
+                        otp = RandomNumber.RandomDigits(Constants.OTPLIM);
                         var response = OTPCall.VerifyYourOTPAsync(null, otp, log);
                     }
 

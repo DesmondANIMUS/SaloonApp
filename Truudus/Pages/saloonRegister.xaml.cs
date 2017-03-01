@@ -80,7 +80,7 @@ namespace Truudus.Pages
             parameters.SaloonName = sname.Text;
             parameters.Email = email.Text;
             parameters.ShortDesc = shortDescbox.Text;
-            parameters.OTP = RandomNumber.RandomDigits(4);
+            parameters.OTP = RandomNumber.RandomDigits(Constants.OTPLIM);
 
             try
             {

@@ -43,7 +43,7 @@ namespace Truudus.Pages
             persona.FirstName = fname.Text;
             persona.LastName = lname.Text;
             persona.Email = emailBox.Text;
-            persona.OTP = RandomNumber.RandomDigits(4);
+            persona.OTP = RandomNumber.RandomDigits(Constants.OTPLIM);
 
             try
             {

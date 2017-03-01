@@ -10,6 +10,7 @@
         private const string publicKey              = "rQ9P5YLnqt8JEmarbyoo";
 
         private const string apiKey                 = "AIzaSyBu5-1WPBPeyqEPCdG7EBnAxJR4n8HqiGM";
+        private const int otplim                    = 6;
         #endregion
 
 
@@ -39,6 +40,8 @@
         internal const string GETUSER               = getuser;
         internal const string GETCOM                = getcom;
         internal const string GETSAL                = getsal;
+
+        internal const int OTPLIM                   = otplim;
         #endregion                
 
         #region Encryption
