@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/main.jpg"/>
+        </Grid.Background>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -26,25 +29,18 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Image Source="./Assets/sci.jpg" 
-               HorizontalAlignment="Stretch"
-               VerticalAlignment="Stretch" Grid.Row="1"/>
-
-        <Image Grid.Column="1" Source="./Assets/person.png"                
-               Grid.Row="1"/>
-
         <Button x:ConnectionId='2' x:Name="saloonButton"  Grid.Row="3" 
                 HorizontalAlignment="Stretch"
-                FontSize="25" Content="Begin Trimmin' "
-                VerticalAlignment="Top" 
-                Background="PaleGreen" Foreground="White"
+                FontSize="25" Content="Saloon "
+                VerticalAlignment="Bottom" 
+                Background="Transparent" Foreground="Teal"
                                            />
 
         <Button x:ConnectionId='3' x:Name="personButton"  Grid.Row="3" 
                 HorizontalAlignment="Stretch"
-                FontSize="25" Content="Get Started"
-                VerticalAlignment="Top" Grid.Column="1"
-                Background="Turquoise" Foreground="White"
+                FontSize="25" Content="Customer"
+                VerticalAlignment="Bottom" Grid.Column="1"
+                Background="Transparent" Foreground="Turquoise"
                                           />
     </Grid>
 </Page>

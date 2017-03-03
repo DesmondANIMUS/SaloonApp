@@ -40,7 +40,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017 RC" />
-    <build:Item Name="OperatingSystem" Version="10.0.15031.0 (rs2_release.170204-1546)" />
+    <build:Item Name="OperatingSystem" Version="10.0.15042.0 (rs2_release.170219-2329)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26206.0" />
     <build:Item Name="ProjectGUID" Value="{C90F73C9-6F3A-45FF-BE0F-270E3D5C8461}" />
     <build:Item Name="ilc.exe" Version="1.4.24209.00 built by: PROJECTNGDR2" />

@@ -57,23 +57,10 @@
         <TextBlock x:Name="StateBlock" Grid.Column="1"
                    Grid.Row="1" VerticalAlignment="Center"
                    TextAlignment="Center" FontSize="30"/>
-        
+
         <TextBlock x:Name="PinBlock" Grid.Column="1" Margin="0,0,0,10"
                    Grid.Row="1" VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"/>
-
-        <Button x:Name="SaloonSearchBut"
-                Style="{StaticResource buttonStyle}" 
-                Grid.ColumnSpan="2" Grid.Row="3" 
-                Content="" VerticalAlignment="Stretch"
-                Background="DarkBlue" Foreground="White"
-                Click="SaloonSearchBut_Click"/>
-
-        <Button x:Name="logoutBut" Style="{StaticResource buttonStyle}"
-                Grid.Column="1" VerticalAlignment="Top"
-                HorizontalAlignment="Right" FontSize="20"
-                Content="Sign Out" FontFamily="Default"
-                Click="logoutBut_Click" Background="LightBlue"/>
 
         <ProgressRing x:Name="proRing" Grid.Row="1"
                       VerticalAlignment="Stretch"
@@ -81,6 +68,71 @@
                       Grid.ColumnSpan="2"
                       Margin="100,100,100,100"
                       Foreground="Teal"/>
+
+        <RelativePanel >
+            <Button x:Name="HamBut" Width="60"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="" Click="HamBut_Click"
+                    Height="40px" Background="Transparent"/>
+        </RelativePanel>
+
+
+        <SplitView  x:Name="splitHam" CompactPaneLength="0" 
+                    HorizontalAlignment="Left" DisplayMode="CompactOverlay" 
+                    OpenPaneLength="250" Grid.ColumnSpan="2" Margin="0,40,0,0"
+                    Grid.RowSpan="3" PaneClosing="splitHam_PaneClosing">
+            <SplitView.PaneBackground>
+                <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/person_back.jpg"/>
+            </SplitView.PaneBackground>
+
+            <!--               Split View Pane                -->
+
+            <SplitView.Pane>
+
+                <ListBox x:Name="listHam" 
+                     SelectionChanged="listHam_SelectionChanged"
+                     HorizontalAlignment="Left" 
+                         SelectionMode="Single">
+                    <ListBox.Background>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/stars.jpg"/>
+                    </ListBox.Background>
+                    <ListBoxItem x:Name="searchSalListItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,5"
+                                   FontSize="20"/>
+                            <TextBlock x:Name="pBox" FontSize="20" 
+                                        Text="Search Saloon" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="editPassItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,10"
+                                   FontSize="20" />
+                            <TextBlock x:Name="aBox" FontSize="20" 
+                                       Text="Edit Password" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:Name="logoutListItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,10"
+                                   FontSize="20" />
+                            <TextBlock x:Name="zBox" FontSize="20" 
+                                       Text="Logout" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                </ListBox>
+            </SplitView.Pane>
+        </SplitView>
+
 
     </Grid>
 </Page>

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>C86BE977C96EB55913540A54C0EDCF7DBA2F2511FFDB62C9C13DE14FFC399223</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C02D54828A0981C769CB7014EB7339AAF6B49C95565514FC224E4F6E87C1FF26</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1be388cc-5956-47f9-8bef-402d430f0b36_1.0.0.0_x86__bxyw9yvdx9jaw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1be388cc-5956-47f9-8bef-402d430f0b36_bxyw9yvdx9jaw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1be388cc-5956-47f9-8bef-402d430f0b36</RegisteredPackageID>
@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-27T15:34:03.082</Modified>
+      <Modified>2017-03-03T10:25:22.531</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -36,9 +36,17 @@
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-12-14T06:59:32.599</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Assets\main.jpg">
+      <PackagePath>Assets\main.jpg</PackagePath>
+      <Modified>2017-03-03T09:45:11.255</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Assets\person.png">
       <PackagePath>Assets\person.png</PackagePath>
       <Modified>2016-12-30T14:42:46.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Assets\person_back.jpg">
+      <PackagePath>Assets\person_back.jpg</PackagePath>
+      <Modified>2017-03-03T09:45:11.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Assets\sci.jpg">
       <PackagePath>Assets\sci.jpg</PackagePath>
@@ -81,19 +89,19 @@
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-15T20:13:12.653</Modified>
+      <Modified>2017-03-03T10:23:02.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.dll">
       <PackagePath>Truudus.dll</PackagePath>
-      <Modified>2017-02-27T15:34:02.560</Modified>
+      <Modified>2017-03-03T10:25:22.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.exe">
       <PackagePath>Truudus.exe</PackagePath>
-      <Modified>2017-02-27T15:34:03.044</Modified>
+      <Modified>2017-03-03T10:25:22.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.pdb">
       <PackagePath>Truudus.pdb</PackagePath>
-      <Modified>2017-02-27T15:34:03.031</Modified>
+      <Modified>2017-03-03T10:25:22.426</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

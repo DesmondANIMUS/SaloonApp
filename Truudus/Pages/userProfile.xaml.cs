@@ -3,6 +3,8 @@ using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,8 +31,7 @@ namespace Truudus.Pages
             city.Visibility = Visibility.Collapsed;
             pin.Visibility = Visibility.Collapsed;
             state.Visibility = Visibility.Collapsed;
-            userPic.Visibility = Visibility.Collapsed;            
-            SaloonSearchBut.Visibility = Visibility.Collapsed;            
+            userPic.Visibility = Visibility.Collapsed;                        
 
             try
             {
@@ -53,8 +54,7 @@ namespace Truudus.Pages
                 city.Visibility = Visibility.Visible;
                 state.Visibility = Visibility.Visible;
                 pin.Visibility = Visibility.Visible;
-                userPic.Visibility = Visibility.Visible;                
-                SaloonSearchBut.Visibility = Visibility.Visible;
+                userPic.Visibility = Visibility.Visible;                                
             }
         }
 
@@ -65,19 +65,57 @@ namespace Truudus.Pages
             log = (LoginInfo)e.Parameter;
         }
 
-        private void SaloonSearchBut_Click(object sender, RoutedEventArgs e)
+        private void HamBut_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(salSearch));
+            splitHam.IsPaneOpen = !splitHam.IsPaneOpen;
         }
 
-        private void logoutBut_Click(object sender, RoutedEventArgs e)
+        private async void listHam_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (searchSalListItem.IsSelected) { Frame.Navigate(typeof(salSearch)); }
+            else if (logoutListItem.IsSelected) { await LogOutActionAsync(); }            
+        }
 
-            localSettings.Values["user"] = null;
-            localSettings.Values["type"] = null;
+        private async Task LogOutActionAsync()
+        {
 
-            Frame.Navigate(typeof(MainPage));
+            var title = "Pending changes";
+            var content = "Are you sure that you wish to logout?";
+
+            var yesCommand = new UICommand("Yes", null);
+            var noCommand = new UICommand("No", null);
+
+            var dialog = new MessageDialog(content, title);
+            dialog.Options = MessageDialogOptions.None;
+            dialog.Commands.Add(yesCommand);
+
+            dialog.DefaultCommandIndex = 0;
+            dialog.CancelCommandIndex = 0;
+
+            if (noCommand != null)
+            {
+                dialog.Commands.Add(noCommand);
+                dialog.CancelCommandIndex = (uint)dialog.Commands.Count - 1;
+            }
+
+            var command = await dialog.ShowAsync();
+
+            if (command == yesCommand)
+            {
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+                localSettings.Values["user"] = null;
+                localSettings.Values["type"] = null;
+
+                Frame.Navigate(typeof(MainPage));
+            }
+            else
+                ToastyTaost.ShowToastNotification("Cancelled", "User cancelled logout");
+        }
+
+        private void splitHam_PaneClosing(SplitView sender, SplitViewPaneClosingEventArgs args)
+        {
+            listHam.SelectedIndex = -1;
         }
     }
 }

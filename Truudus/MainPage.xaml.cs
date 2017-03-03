@@ -1,6 +1,7 @@
 ﻿using Truudus.Pages;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -12,11 +13,23 @@ namespace Truudus
     public sealed partial class MainPage : Page
     {
         LoginInfo log;
+        int x1, x2;
 
         public MainPage()
         {
             this.InitializeComponent();
             log = new LoginInfo();
+
+            ManipulationMode = ManipulationModes.TranslateRailsX | ManipulationModes.TranslateRailsY;
+            ManipulationStarted += (s, e) => x1 = (int)e.Position.X;
+            ManipulationCompleted += (s, e) =>
+            {
+                x2 = (int)e.Position.X;
+                if (x1 > x2)
+                    swypeActionResult(false);
+                else
+                    swypeActionResult(true);
+            };
         }
 
         private void personButton_Click(object sender, RoutedEventArgs e)
@@ -27,6 +40,19 @@ namespace Truudus
         private void saloonButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(logorReg), "Saloon");
+        }
+
+        private void swypeActionResult(bool leftRight)
+        {
+            switch (leftRight)
+            {
+                case false:
+                    Frame.Navigate(typeof(logorReg), "EndUser");
+                    break;
+                case true:
+                    Frame.Navigate(typeof(logorReg), "Saloon");
+                    break;
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
