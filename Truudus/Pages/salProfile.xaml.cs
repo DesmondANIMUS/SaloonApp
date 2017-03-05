@@ -4,6 +4,8 @@ using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -36,10 +38,7 @@ namespace Truudus.Pages
             //userPic.Visibility = Visibility.Collapsed;
             //searchButton.Visibility = Visibility.Collapsed;
             //moreButton.Visibility = Visibility.Collapsed;
-            //commentButton.Visibility = Visibility.Collapsed;
-
-            if (logorReg.intent == false)
-                logoutBut.Visibility = Visibility.Collapsed;
+            //commentButton.Visibility = Visibility.Collapsed;            
 
             try
             {                
@@ -74,31 +73,61 @@ namespace Truudus.Pages
             base.OnNavigatedTo(e);
 
             log = (LoginInfo)e.Parameter;
+        }  
+        
+        private void HamBut_Click(object sender, RoutedEventArgs e)
+        {
+            splitHam.IsPaneOpen = !splitHam.IsPaneOpen;
         }
 
-        private void moreButton_Click(object sender, RoutedEventArgs e)
+        private async void listHam_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Frame.Navigate(typeof(salMore), data);
+            if (searchSalListItem.IsSelected) { Frame.Navigate(typeof(salSearch)); }
+            else if (logoutListItem.IsSelected) { await LogOutActionAsync(); }
+            else if (commentsSalListItem.IsSelected) { Frame.Navigate(typeof(salComment)); }
+            else if (aboutSalItem.IsSelected) { Frame.Navigate(typeof(salMore), data); }
         }
 
-        private void commentButton_Click(object sender, RoutedEventArgs e)
+        private async Task LogOutActionAsync()
         {
-            Frame.Navigate(typeof(salComment));
+
+            var title = "Pending changes";
+            var content = "Are you sure that you wish to logout?";
+
+            var yesCommand = new UICommand("Yes", null);
+            var noCommand = new UICommand("No", null);
+
+            var dialog = new MessageDialog(content, title);
+            dialog.Options = MessageDialogOptions.None;
+            dialog.Commands.Add(yesCommand);
+
+            dialog.DefaultCommandIndex = 0;
+            dialog.CancelCommandIndex = 0;
+
+            if (noCommand != null)
+            {
+                dialog.Commands.Add(noCommand);
+                dialog.CancelCommandIndex = (uint)dialog.Commands.Count - 1;
+            }
+
+            var command = await dialog.ShowAsync();
+
+            if (command == yesCommand)
+            {
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+                localSettings.Values["user"] = null;
+                localSettings.Values["type"] = null;
+
+                Frame.Navigate(typeof(MainPage));
+            }
+            else
+                ToastyTaost.ShowToastNotification("Cancelled", "User cancelled logout");
         }
 
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private void splitHam_PaneClosing(SplitView sender, SplitViewPaneClosingEventArgs args)
         {
-            Frame.Navigate(typeof(salSearch));
-        }
-
-        private void logoutBut_Click(object sender, RoutedEventArgs e)
-        {
-            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-
-            localSettings.Values["user"] = null;
-            localSettings.Values["type"] = null;
-
-            Frame.Navigate(typeof(MainPage));
+            listHam.SelectedIndex = -1;
         }
     }
 }

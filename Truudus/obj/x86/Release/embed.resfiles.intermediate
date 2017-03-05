@@ -1,6 +1,7 @@
 App.xbf
 MainPage.xbf
 Pages\commonRegister.xbf
+Pages\editUserPassword.xbf
 Pages\logorReg.xbf
 Pages\personReg.xbf
 Pages\salComment.xbf

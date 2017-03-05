@@ -17360,7 +17360,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_UI_Popups_IUICommand_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Popups.IUICommand>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget190>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_UI_Popups_IUICommand_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget191>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_UI_Popups_IUICommand_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -35169,6 +35169,120 @@ namespace Windows.UI.Notifications
 
 namespace Windows.UI.Popups
 {
+	// Windows.UI.Popups.IUICommandFactory
+	public unsafe static class IUICommandFactory__Impl
+	{
+		// StubClass for 'Windows.UI.Popups.IUICommandFactory'
+		public static partial class StubClass
+		{
+			// Signature, Windows.UI.Popups.IUICommandFactory.CreateWithHandler, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.HSTRINGMarshaller] string__System.Runtime.InteropServices.HSTRING, [fwd] [in] [Mcg.CodeGen.WinRTDelegateMarshaller] Windows_UI_Popups_UICommandInvokedHandler__Windows_UI_Popups__UICommandInvokedHandler *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] System_IntPtr____w64 int, 
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static global::System.IntPtr CreateWithHandler(
+						global::System.__ComObject __this, 
+						string label, 
+						global::Windows.UI.Popups.UICommandInvokedHandler action)
+			{
+				// Setup
+				global::System.Runtime.InteropServices.HSTRING unsafe_label = default(global::System.Runtime.InteropServices.HSTRING);
+				global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl** unsafe_action = default(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl**);
+				global::System.IntPtr unsafe_instance__retval;
+				global::System.IntPtr instance__retval;
+				int unsafe___return__;
+				try
+				{
+					// Marshalling
+					fixed (char* pBuffer_label = label)
+					{
+						global::System.Runtime.InteropServices.HSTRING_HEADER hstring_header_label;
+						global::System.Runtime.InteropServices.McgMarshal.StringToHStringReference(pBuffer_label, label, &(hstring_header_label), &(unsafe_label));
+						unsafe_action = (global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
+											action, 
+											typeof(global::Windows.UI.Popups.UICommandInvokedHandler).TypeHandle, 
+											global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget190>(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Invoke)
+										);
+						// Call to native method
+						unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
+											__this, 
+											typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle, 
+											global::Windows.UI.Popups.IUICommandFactory__Impl.Vtbl.idx_CreateWithHandler, 
+											unsafe_label, 
+											unsafe_action, 
+											&(unsafe_instance__retval)
+										);
+						global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+						instance__retval = unsafe_instance__retval;
+					}
+					// Return
+					return instance__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_action)));
+				}
+			}
+		}
+
+		// DispatchClass for 'Windows.UI.Popups.IUICommandFactory'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommandFactory))]
+		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.UI.Popups.IUICommandFactory
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			global::System.IntPtr global::Windows.UI.Popups.IUICommandFactory.CreateWithHandler(
+						string label, 
+						global::Windows.UI.Popups.UICommandInvokedHandler action)
+			{
+				global::System.IntPtr __retVal = global::Windows.UI.Popups.IUICommandFactory__Impl.StubClass.CreateWithHandler(
+									this, 
+									label, 
+									action
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+		}
+
+		// v-table for 'Windows.UI.Popups.IUICommandFactory'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommandFactory))]
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_CreateWithHandler = 7;
+		}
+	}
+
+	// Windows.UI.Popups.UICommandInvokedHandler
+	public unsafe static class UICommandInvokedHandler__Impl
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static void Invoke(
+					this global::System.__ComObject __this, 
+					global::Windows.UI.Popups.IUICommand command)
+		{
+			global::McgInterop.ForwardComSharedStubs.Proc_TArg0__<global::Windows.UI.Popups.UICommandInvokedHandler, global::Windows.UI.Popups.IUICommand>(
+								__this, 
+								command, 
+								global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.idx_Invoke
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		// v-table for 'Windows.UI.Popups.UICommandInvokedHandler'
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_Invoke = 3;
+		}
+	}
+
+	// Windows.UI.Popups.IUICommand
+	public unsafe static class IUICommand__Impl
+	{
+		// v-table for 'Windows.UI.Popups.IUICommand'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommand))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
 	// Windows.UI.Popups.IMessageDialogFactory
 	public unsafe static class IMessageDialogFactory__Impl
 	{
@@ -35407,120 +35521,6 @@ namespace Windows.UI.Popups
 			internal const int idx_put_CancelCommandIndex = 12;
 			internal const int idx_ShowAsync = 15;
 			internal const int idx_put_Options = 17;
-		}
-	}
-
-	// Windows.UI.Popups.IUICommand
-	public unsafe static class IUICommand__Impl
-	{
-		// v-table for 'Windows.UI.Popups.IUICommand'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommand))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.UI.Popups.IUICommandFactory
-	public unsafe static class IUICommandFactory__Impl
-	{
-		// StubClass for 'Windows.UI.Popups.IUICommandFactory'
-		public static partial class StubClass
-		{
-			// Signature, Windows.UI.Popups.IUICommandFactory.CreateWithHandler, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.HSTRINGMarshaller] string__System.Runtime.InteropServices.HSTRING, [fwd] [in] [Mcg.CodeGen.WinRTDelegateMarshaller] Windows_UI_Popups_UICommandInvokedHandler__Windows_UI_Popups__UICommandInvokedHandler *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] System_IntPtr____w64 int, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::System.IntPtr CreateWithHandler(
-						global::System.__ComObject __this, 
-						string label, 
-						global::Windows.UI.Popups.UICommandInvokedHandler action)
-			{
-				// Setup
-				global::System.Runtime.InteropServices.HSTRING unsafe_label = default(global::System.Runtime.InteropServices.HSTRING);
-				global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl** unsafe_action = default(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl**);
-				global::System.IntPtr unsafe_instance__retval;
-				global::System.IntPtr instance__retval;
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					fixed (char* pBuffer_label = label)
-					{
-						global::System.Runtime.InteropServices.HSTRING_HEADER hstring_header_label;
-						global::System.Runtime.InteropServices.McgMarshal.StringToHStringReference(pBuffer_label, label, &(hstring_header_label), &(unsafe_label));
-						unsafe_action = (global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
-											action, 
-											typeof(global::Windows.UI.Popups.UICommandInvokedHandler).TypeHandle, 
-											global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget191>(global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Invoke)
-										);
-						// Call to native method
-						unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-											__this, 
-											typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle, 
-											global::Windows.UI.Popups.IUICommandFactory__Impl.Vtbl.idx_CreateWithHandler, 
-											unsafe_label, 
-											unsafe_action, 
-											&(unsafe_instance__retval)
-										);
-						global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-						instance__retval = unsafe_instance__retval;
-					}
-					// Return
-					return instance__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_action)));
-				}
-			}
-		}
-
-		// DispatchClass for 'Windows.UI.Popups.IUICommandFactory'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommandFactory))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.UI.Popups.IUICommandFactory
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::System.IntPtr global::Windows.UI.Popups.IUICommandFactory.CreateWithHandler(
-						string label, 
-						global::Windows.UI.Popups.UICommandInvokedHandler action)
-			{
-				global::System.IntPtr __retVal = global::Windows.UI.Popups.IUICommandFactory__Impl.StubClass.CreateWithHandler(
-									this, 
-									label, 
-									action
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.UI.Popups.IUICommandFactory'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommandFactory))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_CreateWithHandler = 7;
-		}
-	}
-
-	// Windows.UI.Popups.UICommandInvokedHandler
-	public unsafe static class UICommandInvokedHandler__Impl
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.UI.Popups.IUICommand command)
-		{
-			global::McgInterop.ForwardComSharedStubs.Proc_TArg0__<global::Windows.UI.Popups.UICommandInvokedHandler, global::Windows.UI.Popups.IUICommand>(
-								__this, 
-								command, 
-								global::Windows.UI.Popups.UICommandInvokedHandler__Impl.Vtbl.idx_Invoke
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		// v-table for 'Windows.UI.Popups.UICommandInvokedHandler'
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_Invoke = 3;
 		}
 	}
 }

@@ -115,6 +115,9 @@
     <Compile Include="Pages\commonRegister.xaml.cs">
       <DependentUpon>commonRegister.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\editUserPassword.xaml.cs">
+      <DependentUpon>editUserPassword.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\logorReg.xaml.cs">
       <DependentUpon>logorReg.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\commonRegister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\editUserPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -104,6 +104,8 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Truudus.Pages.commonRegister" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Truudus.Pages.editUserPassword" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
@@ -146,8 +148,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Truudus.Pages.salComment" />
     <RootType FullName="Truudus.Pages.salMore" />
@@ -155,12 +157,6 @@
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Fill" />
     </RootType>
-    <RootType FullName="Truudus.Pages.salProfile" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Path" />
-    </RootType>
-    <RootType FullName="Truudus.Pages.salSearch" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
     </RootType>
@@ -185,6 +181,12 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Truudus.Pages.salProfile" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Truudus.Pages.salSearch" />
     <RootType FullName="Truudus.Pages.userProfile" />
   </Roots.RootTypes>
 </Roots>

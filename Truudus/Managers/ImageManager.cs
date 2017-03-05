@@ -12,8 +12,8 @@ namespace Truudus.Managers
 {
     class ImageManager
     {
-        private Stream stream = new MemoryStream();
-        private CancellationTokenSource cts;
+        //private Stream stream = new MemoryStream();
+        //private CancellationTokenSource cts;
 
         //private async void SelectImage()
         //{

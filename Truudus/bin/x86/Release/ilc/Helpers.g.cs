@@ -2361,12 +2361,12 @@ namespace McgInterop
 
 		public delegate void AddrOfTarget190(
 					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
+					global::Windows.UI.Popups.IUICommand a1);
 
 		public delegate void AddrOfTarget191(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Popups.IUICommand a1);
+					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
 
 		public delegate void AddrOfTarget192(
 					global::System.__ComObject a0, 

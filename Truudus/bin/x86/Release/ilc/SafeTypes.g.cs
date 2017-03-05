@@ -2814,14 +2814,14 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DualApiPartitionAttribute : global::System.Attribute
+	public unsafe sealed class MuseAttribute : global::System.Attribute
 	{
-		public DualApiPartitionAttribute()
+		public MuseAttribute()
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DualApiPartitionAttribute\'.  Windows Runtime attribute types " +
-					"are not constructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MuseAttribute\'.  Windows Runtime attribute types are not cons" +
+					"tructable.");
 		}
-		public uint version;
+		public uint Version;
 	}
 
 	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
@@ -2841,14 +2841,14 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class MuseAttribute : global::System.Attribute
+	public unsafe sealed class DualApiPartitionAttribute : global::System.Attribute
 	{
-		public MuseAttribute()
+		public DualApiPartitionAttribute()
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MuseAttribute\'.  Windows Runtime attribute types are not cons" +
-					"tructable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DualApiPartitionAttribute\'.  Windows Runtime attribute types " +
+					"are not constructable.");
 		}
-		public uint Version;
+		public uint version;
 	}
 
 	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
@@ -5033,6 +5033,53 @@ namespace Windows.UI.Notifications
 
 namespace Windows.UI.Popups
 {
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommand))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class UICommand : global::System.__ComObject, global::Windows.UI.Popups.IUICommand
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public UICommand(
+					string label, 
+					global::Windows.UI.Popups.UICommandInvokedHandler action)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
+								"Windows.UI.Popups.UICommand", 
+								label, 
+								action
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.IntPtr __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
+					string typeName, 
+					string label, 
+					global::Windows.UI.Popups.UICommandInvokedHandler action)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.UI.Popups.IUICommandFactory__Impl.StubClass.CreateWithHandler(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle
+												), 
+								label, 
+								action
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		public UICommand(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IMessageDialog))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -5161,51 +5208,24 @@ namespace Windows.UI.Popups
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IUICommand))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class UICommand : global::System.__ComObject, global::Windows.UI.Popups.IUICommand
+	public unsafe interface IUICommandFactory
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public UICommand(
+		global::System.IntPtr CreateWithHandler(
 					string label, 
-					global::Windows.UI.Popups.UICommandInvokedHandler action)
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
-								"Windows.UI.Popups.UICommand", 
-								label, 
-								action
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
+					global::Windows.UI.Popups.UICommandInvokedHandler action);
+	}
 
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Popups__IUICommandFactory_CreateWithHandler(
-					string typeName, 
-					string label, 
-					global::Windows.UI.Popups.UICommandInvokedHandler action)
-		{
-			global::System.IntPtr __pRetVal;
-			__pRetVal = global::Windows.UI.Popups.IUICommandFactory__Impl.StubClass.CreateWithHandler(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Popups.IUICommandFactory).TypeHandle
-												), 
-								label, 
-								action
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
-			return __pRetVal;
-		}
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void UICommandInvokedHandler(global::Windows.UI.Popups.IUICommand command);
 
-		public UICommand(global::System.IntPtr dummy)
-		{
-		}
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IUICommand
+	{
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -5244,26 +5264,6 @@ namespace Windows.UI.Popups
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Options")]
 		void put_Options(global::Windows.UI.Popups.MessageDialogOptions value);
 	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IUICommand
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IUICommandFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateWithHandler(
-					string label, 
-					global::Windows.UI.Popups.UICommandInvokedHandler action);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void UICommandInvokedHandler(global::Windows.UI.Popups.IUICommand command);
 
 	[global::System.Flags]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]

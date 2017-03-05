@@ -62,44 +62,93 @@
                    Grid.Row="1"  VerticalAlignment="Bottom"
                    TextAlignment="Center" FontSize="30"/>
 
-        
-        <Button x:ConnectionId='10' x:Name="logoutBut" Style="{StaticResource buttonStyle}"
-                Grid.Column="1" VerticalAlignment="Top"
-                HorizontalAlignment="Right" FontSize="20"
-                Content="Sign Out" FontFamily="Default"
-                                        Background="LightBlue"/>
-
-        <ProgressRing x:ConnectionId='11' x:Name="proRing" Grid.Row="1"
+        <ProgressRing x:ConnectionId='10' x:Name="proRing" Grid.Row="1"
                       VerticalAlignment="Stretch"
                       HorizontalAlignment="Stretch"
                       Grid.ColumnSpan="2"
                       Margin="100,100,100,100"
                       Foreground="Teal"/>
 
-        <Grid Grid.Row="2" Grid.ColumnSpan="2">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <RelativePanel >
+            <Button x:ConnectionId='21' x:Name="HamBut" Width="60"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content=""                     
+                    Height="40px" Background="Transparent"/>
+        </RelativePanel>
 
-            <Button x:ConnectionId='12' x:Name="moreButton" 
-                    Style="{StaticResource buttonStyle}"
-                    Background="DarkBlue" Foreground="White"
-                    Content="About Us"                         
-                    Grid.Column="1" FontFamily="Default"
-                    FontSize="23px"/>
 
-            <Button x:ConnectionId='13' x:Name="commentButton" Style="{StaticResource buttonStyle}"
-                Grid.Column="2" Content=""                            
-                    Background="LightBlue"/>
+        <SplitView x:ConnectionId='11'  x:Name="splitHam" CompactPaneLength="0" 
+                    HorizontalAlignment="Left" DisplayMode="CompactOverlay" 
+                    OpenPaneLength="250" Grid.ColumnSpan="2" Margin="0,40,0,0"
+                    Grid.RowSpan="3"                                   >
+            <SplitView.PaneBackground>
+                <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/person_back.jpg"/>
+            </SplitView.PaneBackground>
 
-            <Button x:ConnectionId='14' x:Name="searchButton" Style="{StaticResource buttonStyle}"                
-                    Content=""                            
-                    Background="LightBlue"/>
+            <!--               Split View Pane                -->
 
-        </Grid>
+            <SplitView.Pane>
+
+                <ListBox x:ConnectionId='12' x:Name="listHam" 
+                                                                
+                     HorizontalAlignment="Left" 
+                         SelectionMode="Single">
+                    <ListBox.Background>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/stars.jpg"/>
+                    </ListBox.Background>
+
+
+                    <ListBoxItem x:ConnectionId='13' x:Name="commentsSalListItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,5"
+                                   FontSize="20"/>
+                            <TextBlock x:ConnectionId='20' x:Name="p1Box" FontSize="20" 
+                                        Text="Comments" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+
+
+                    <ListBoxItem x:ConnectionId='14' x:Name="searchSalListItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,5"
+                                   FontSize="20"/>
+                            <TextBlock x:ConnectionId='19' x:Name="pBox" FontSize="20" 
+                                        Text="Search Saloon" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:ConnectionId='15' x:Name="aboutSalItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,10"
+                                   FontSize="20" />
+                            <TextBlock x:ConnectionId='18' x:Name="aBox" FontSize="20" 
+                                       Text="About Us" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem x:ConnectionId='16' x:Name="logoutListItem"
+                                 Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                   Text="" Margin="5,10,0,10"
+                                   FontSize="20" />
+                            <TextBlock x:ConnectionId='17' x:Name="zBox" FontSize="20" 
+                                       Text="Logout" Margin="30,4,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                </ListBox>
+            </SplitView.Pane>
+        </SplitView>
+
 
     </Grid>
 </Page>

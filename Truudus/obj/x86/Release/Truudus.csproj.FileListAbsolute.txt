@@ -458,3 +458,8 @@ C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus
 C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Assets\person_back.jpg
 C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\ilc\in\Assets\main.jpg
 C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\ilc\in\Assets\person_back.jpg
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\Pages\editUserPassword.g.i.cs
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\Pages\editUserPassword.g.cs
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\Pages\editUserPassword.xaml
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\Pages\editUserPassword.xbf
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\Pages\editUserPassword.xbf
