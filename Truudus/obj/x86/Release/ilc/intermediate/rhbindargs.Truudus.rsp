@@ -3,7 +3,7 @@
 /runtime:mrt100_app
 /eh:clr
 /pdb
-"/nativelink:C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24209\x86\ilc\lib\Native\vmath.lib"
+"/nativelink:C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\x86\ilc\lib\Native\vmath.lib"
 /customImports
 /methodBodyFolding
 "C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Release\ilc\intermediate\MDIL\Truudus.mdilexe"

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="LightBlue">
+    <Grid Background="White">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -73,7 +73,7 @@
         <RelativePanel >
             <Button x:Name="HamBut" Width="60"
                     FontFamily="Segoe MDL2 Assets"
-                    Content="" Click="HamBut_Click"
+                    Content="" Click="HamBut_Click"
                     Height="40px" Background="Transparent"/>
         </RelativePanel>
 
@@ -93,14 +93,9 @@
                 <ListBox x:Name="listHam" 
                      SelectionChanged="listHam_SelectionChanged"
                      HorizontalAlignment="Left" 
-                         SelectionMode="Single">
-                    <ListBox.Background>
-                        <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/stars.jpg"/>
-                    </ListBox.Background>
-
-
-                    <ListBoxItem x:Name="commentsSalListItem"
-                                 Foreground="White">
+                     SelectionMode="Single">
+                    
+                    <ListBoxItem x:Name="commentsSalListItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                    Text="" Margin="5,10,0,5"
@@ -112,8 +107,7 @@
 
 
 
-                    <ListBoxItem x:Name="searchSalListItem"
-                                 Foreground="White">
+                    <ListBoxItem x:Name="searchSalListItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                    Text="" Margin="5,10,0,5"
@@ -123,8 +117,7 @@
                         </StackPanel>
                     </ListBoxItem>
 
-                    <ListBoxItem x:Name="aboutSalItem"
-                                 Foreground="White">
+                    <ListBoxItem x:Name="aboutSalItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                    Text="" Margin="5,10,0,10"
@@ -134,8 +127,7 @@
                         </StackPanel>
                     </ListBoxItem>
 
-                    <ListBoxItem x:Name="logoutListItem"
-                                 Foreground="White">
+                    <ListBoxItem x:Name="logoutListItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                    Text="" Margin="5,10,0,10"

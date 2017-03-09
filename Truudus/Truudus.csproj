@@ -108,15 +108,13 @@
     <Compile Include="Managers\LocationManagerCall.cs" />
     <Compile Include="Managers\OTPCall.cs" />
     <Compile Include="Managers\SearchCall.cs" />
+    <Compile Include="Managers\UpdateCommonPassword.cs" />
     <Compile Include="Models\CommentsResponse.cs" />
     <Compile Include="Models\CommonResponse.cs" />
     <Compile Include="Models\GoogleRevGeoResponse.cs" />
     <Compile Include="Models\SaloonResponse.cs" />
     <Compile Include="Pages\commonRegister.xaml.cs">
       <DependentUpon>commonRegister.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\editUserPassword.xaml.cs">
-      <DependentUpon>editUserPassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\logorReg.xaml.cs">
       <DependentUpon>logorReg.xaml</DependentUpon>
@@ -138,6 +136,9 @@
     </Compile>
     <Compile Include="Pages\salSearch.xaml.cs">
       <DependentUpon>salSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\updatePassword.xaml.cs">
+      <DependentUpon>updatePassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\userProfile.xaml.cs">
       <DependentUpon>userProfile.xaml</DependentUpon>
@@ -179,10 +180,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\editUserPassword.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\logorReg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -208,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\salSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\updatePassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="LightBlue">
+    <Grid Background="White">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -63,18 +63,18 @@
 
             <Button x:ConnectionId='7' x:Name="login" VerticalAlignment="Stretch"
                     HorizontalAlignment="Stretch" Content="Sign In"
-                    Background="LightBlue" FontSize="30"
-                                       />
+                    Background="Teal" FontSize="30"
+                                        Foreground="White"/>
 
             <Button x:ConnectionId='8' x:Name="validate" VerticalAlignment="Stretch"
                     HorizontalAlignment="Stretch" Content="Validate"
                     Background="White" FontSize="30" 
                     Visibility="Collapsed"                       />
 
-            <Button x:ConnectionId='9' x:Name="register" Content="Sign Up" 
+            <Button x:ConnectionId='9' x:Name="register" Content="Register" 
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" FontSize="30"
-                    Background="DarkBlue" Foreground="White"
+                    Background="Teal" Foreground="White"
                     Grid.Column="1"                       />
 
             <ProgressRing x:ConnectionId='10' x:Name="welcomeRing"                      

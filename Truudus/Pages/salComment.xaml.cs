@@ -23,12 +23,12 @@ namespace Truudus.Pages
         {
             this.InitializeComponent();
             com = new CommentInfo();
+            log = new LoginInfo();
             comments = new ObservableCollection<Response>();
         }
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
-        {            
-            log = salProfile.log;
+        {
             var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;
             
             com.Username = (string)keepTemp.Values["user"];            
@@ -46,7 +46,7 @@ namespace Truudus.Pages
         {
             base.OnNavigatedTo(e);
 
-            com.Comment = (string)e.Parameter;
+            log = (LoginInfo)e.Parameter;
         }
 
         private void moreButton_Click(object sender, RoutedEventArgs e)
@@ -91,6 +91,11 @@ namespace Truudus.Pages
             starList.Visibility = Visibility.Visible;
             commentsList.Visibility = Visibility.Visible;
             giveStar.Visibility = Visibility.Visible;
+
+            if (logorReg.intent == true)
+                starField.Visibility = Visibility.Collapsed;
+            else
+                starField.Visibility = Visibility.Visible;
         }
 
         private void back_Click(object sender, RoutedEventArgs e)

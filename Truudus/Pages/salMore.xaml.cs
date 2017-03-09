@@ -44,5 +44,10 @@ namespace Truudus.Pages
         {                        
             Frame.Navigate(typeof(salProfile), logData);
         }
+
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(updatePassword), logData);
+        }
     }
 }

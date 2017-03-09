@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="LightBlue">
+    <Grid Background="White">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -30,10 +30,10 @@
         <Button x:ConnectionId='2' x:Name="moreButton" Style="{StaticResource buttonStyle}"
                 Grid.Row="2" FontSize="30" Grid.ColumnSpan="2"
                 Content=""                         
-                Background="DarkBlue" Foreground="White"/>
+                Background="Teal" Foreground="White"/>
 
         <Button x:ConnectionId='3' x:Name="giveStar"                       
-                Content="" FontSize="30" Grid.Row="1"
+                Content="" FontSize="30" Grid.Row="1"
                 Grid.ColumnSpan="2" HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" 
                 Background="Transparent"/>
@@ -90,14 +90,14 @@
         <Button x:ConnectionId='8' x:Name="makeCommentButton" Grid.Row="2"                
                 Style="{StaticResource buttonStyle}"
                 FontFamily="Default" Foreground="White"
-                Background="DarkBlue"                                
+                Background="Teal"                                
                 Content="Comment" Grid.ColumnSpan="2"
                 Visibility="Collapsed"/>
 
         <Button x:ConnectionId='9' x:Name="back" Content=""                   
                 Style="{StaticResource buttonStyle}"
                 Grid.Row="1" Grid.ColumnSpan="2"
-                Visibility="Collapsed" Background="LightBlue"/>
+                Visibility="Collapsed" Background="White"/>
 
     </Grid>
 </Page>

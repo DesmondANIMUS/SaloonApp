@@ -31,7 +31,7 @@
 
         <Button x:Name="saloonButton"  Grid.Row="3" 
                 HorizontalAlignment="Stretch"
-                FontSize="25" Content="Saloon "
+                FontSize="25" Content="Salon"
                 VerticalAlignment="Bottom" 
                 Background="Transparent" Foreground="Teal"
                 Click="saloonButton_Click" />

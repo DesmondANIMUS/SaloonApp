@@ -4103,28 +4103,28 @@ namespace McgInterop
 	//     + Total Stubs = 594
 	//     + Total Forward Stubs = 333
 	//     + Total Reverse Stubs = 261 (144 shared stubs, 117 unshared stubs, 123 shared hits)
-	//     + Unshared Forward Stubs = 2750
-	//     + Shared Forward Stubs = 826
+	//     + Unshared Forward Stubs = 2759
+	//     + Shared Forward Stubs = 829
 	//     + Shared Target Forward Stubs = 72
-	//     + Shared Target Forward Stubs Cache Hit = 754
+	//     + Shared Target Forward Stubs Cache Hit = 757
 	// 
 	// Type/Method Data
 		//
 	//     + WinRT interfaces : 430
 	//     + WinRT classes : 189
 	//     + WinRT delegates : 42
-	//     + WinRT class methods : 639
+	//     + WinRT class methods : 642
 	//     + dispatch classes : 364
-	//     + dispatch methods : 939
+	//     + dispatch methods : 942
 	//     + stub classes : 303
-	//     + stub methods : 1079
+	//     + stub methods : 1082
 	//     + vtables : 707
-	//     + vtable methods : 1518
+	//     + vtable methods : 1521
 	// 
 	// Reducer Data
 		//
 	//     + discarded v-tables : 678
-	//     + discarded v-table methods : 1498
+	//     + discarded v-table methods : 1501
 	//     + discarded class methods : 8
 	//     + discarded dispatch class methods : 84
 	//     + discarded stub class methods : 8
@@ -16033,14 +16033,14 @@ namespace McgInterop
 		// Count=468
 		[global::System.Runtime.CompilerServices.PreInitialized]
 		static readonly byte[] s_ccwTemplateData_Hashtable = new byte[] {
-				17, 34, 0, 58, 0, 76, 0, 97, 0, 118, 0, 148, 0, 160, 0, 163, 0, 184, 0, 208, 0, 220, 0, 241, 0, 0, 1, 30, 1, 62, 1, 81, 1, 101, 1, 71, 105, 5, 72, 101, 5, 113, 165, 5, 143, 13, 6, 164, 113, 6, 
-				220, 53, 6, 222, 189, 5, 242, 53, 5, 9, 193, 4, 24, 185, 5, 117, 213, 4, 142, 169, 4, 217, 221, 5, 230, 109, 5, 24, 185, 5, 73, 185, 4, 110, 245, 4, 112, 205, 5, 118, 101, 5, 163, 157, 5, 180, 89, 5, 13, 121, 
-				4, 29, 133, 5, 56, 105, 5, 84, 97, 4, 96, 201, 4, 152, 217, 3, 186, 5, 4, 21, 101, 5, 47, 77, 5, 56, 241, 4, 74, 217, 4, 83, 181, 3, 121, 201, 3, 152, 113, 3, 153, 109, 4, 188, 93, 3, 234, 133, 4, 79, 
-				113, 4, 93, 193, 3, 139, 221, 4, 165, 153, 3, 68, 105, 3, 43, 153, 3, 46, 45, 3, 171, 249, 3, 207, 209, 3, 212, 185, 3, 229, 85, 4, 250, 209, 3, 6, 209, 2, 66, 101, 3, 67, 225, 2, 120, 253, 2, 127, 21, 4, 
-				183, 157, 2, 222, 17, 4, 255, 45, 3, 53, 213, 2, 93, 73, 3, 214, 149, 3, 237, 37, 3, 42, 217, 2, 62, 253, 2, 124, 133, 3, 178, 161, 2, 213, 57, 3, 218, 5, 3, 243, 89, 3, 28, 225, 1, 78, 93, 3, 153, 17, 
-				2, 173, 25, 3, 255, 173, 1, 73, 25, 2, 78, 169, 2, 79, 181, 1, 80, 253, 1, 88, 41, 2, 105, 133, 1, 124, 157, 2, 245, 25, 2, 250, 165, 1, 253, 81, 2, 2, 181, 1, 64, 69, 1, 77, 205, 1, 140, 97, 2, 168, 
-				141, 2, 176, 45, 1, 187, 118, 212, 161, 1, 227, 205, 1, 229, 133, 1, 247, 69, 1, 14, 121, 1, 30, 201, 1, 50, 70, 103, 102, 166, 137, 1, 218, 197, 1, 235, 29, 1, 5, 65, 1, 7, 116, 39, 233, 1, 69, 98, 96, 106, 
-				104, 108, 115, 97, 1, 199, 145, 1, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 
+				17, 34, 0, 61, 0, 79, 0, 100, 0, 121, 0, 151, 0, 163, 0, 166, 0, 187, 0, 211, 0, 223, 0, 244, 0, 3, 1, 33, 1, 62, 1, 81, 1, 101, 1, 71, 101, 5, 72, 97, 5, 113, 173, 5, 143, 13, 6, 164, 113, 6, 
+				219, 53, 5, 220, 41, 6, 222, 177, 5, 242, 41, 5, 9, 181, 4, 24, 173, 5, 117, 197, 4, 142, 157, 4, 217, 209, 5, 230, 97, 5, 24, 173, 5, 73, 169, 4, 110, 233, 4, 112, 193, 5, 118, 89, 5, 163, 145, 5, 180, 77, 
+				5, 13, 109, 4, 29, 121, 5, 56, 93, 5, 84, 85, 4, 96, 189, 4, 152, 205, 3, 186, 245, 3, 21, 89, 5, 47, 65, 5, 56, 229, 4, 74, 205, 4, 83, 169, 3, 121, 185, 3, 152, 101, 3, 153, 97, 4, 188, 81, 3, 234, 
+				121, 4, 79, 101, 4, 93, 181, 3, 139, 209, 4, 165, 141, 3, 68, 89, 3, 43, 141, 3, 46, 33, 3, 171, 237, 3, 207, 197, 3, 212, 173, 3, 229, 73, 4, 250, 197, 3, 6, 197, 2, 66, 89, 3, 67, 209, 2, 120, 241, 2, 
+				127, 9, 4, 183, 145, 2, 222, 5, 4, 255, 33, 3, 53, 201, 2, 93, 61, 3, 214, 137, 3, 237, 25, 3, 42, 201, 2, 62, 241, 2, 124, 121, 3, 178, 149, 2, 213, 45, 3, 218, 249, 2, 243, 77, 3, 28, 213, 1, 78, 81, 
+				3, 153, 1, 2, 173, 13, 3, 255, 161, 1, 73, 13, 2, 78, 157, 2, 79, 165, 1, 80, 241, 1, 88, 29, 2, 105, 121, 1, 124, 145, 2, 245, 13, 2, 250, 153, 1, 253, 69, 2, 2, 169, 1, 77, 205, 1, 140, 97, 2, 168, 
+				141, 2, 176, 41, 1, 187, 118, 212, 161, 1, 227, 205, 1, 229, 133, 1, 247, 69, 1, 14, 121, 1, 30, 201, 1, 50, 70, 103, 100, 166, 137, 1, 218, 197, 1, 235, 29, 1, 5, 65, 1, 7, 116, 39, 233, 1, 69, 98, 96, 106, 
+				104, 106, 115, 97, 1, 199, 145, 1, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 
 				84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 
 				184, 186, 188, 190, 192, 194, 196, 198, 200, 202, 204, 206, 208, 210, 212, 214, 216, 218};
 		static readonly ushort[] s_ccwTemplateData_NameIndices = new ushort[] {
@@ -16061,7 +16061,6 @@ namespace McgInterop
 				229, // Windows.UI.Xaml.IDependencyObject
 				229, // Windows.UI.Xaml.IDependencyObject
 				229, // Windows.UI.Xaml.IDependencyObject
-				229, // Windows.UI.Xaml.IDependencyObject
 				9347, // Windows.UI.Xaml.Markup.IComponentConnector
 				5287, // Windows.UI.Xaml.IDataTemplateExtension
 				5287, // Windows.UI.Xaml.IDataTemplateExtension
@@ -16071,6 +16070,7 @@ namespace McgInterop
 				229, // Windows.UI.Xaml.IDependencyObject
 				9347, // Windows.UI.Xaml.Markup.IComponentConnector
 				5287, // Windows.UI.Xaml.IDataTemplateExtension
+				229, // Windows.UI.Xaml.IDependencyObject
 				229, // Windows.UI.Xaml.IDependencyObject
 				33273, // Windows.Foundation.IClosable
 				33273, // Windows.Foundation.IClosable
@@ -16089,9 +16089,9 @@ namespace McgInterop
 				33284, // Windows.UI.Xaml.Interop.IBindableIterable
 				33284, // Windows.UI.Xaml.Interop.IBindableIterable
 				289, // Windows.Foundation.Collections.IMap`2<Object,Object>
-				33273, // Windows.Foundation.IClosable
 				10056, // Windows.Foundation.Collections.IMap`2<String,Object>
 				33303, // Windows.Foundation.Collections.IVector`1<Int32>
+				33273, // Windows.Foundation.IClosable
 				17386, // Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IKeyValuePair`2<String,Windows.Foundation.Collections.IIterable`1<String>>>
 				17386, // Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IKeyValuePair`2<String,Windows.Foundation.Collections.IIterable`1<String>>>
 				33284, // Windows.UI.Xaml.Interop.IBindableIterable
@@ -16283,21 +16283,13 @@ namespace McgInterop
 				}, 
 				// Index = 14
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.editUserPassword, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 5897fd40
-					SupportedInterfaceListBeginIndex = 8,
-					NumberOfSupportedInterface = 2,
-					ParentCCWTemplateIndex = 6,
-					IsWinRTType = false,
-				}, 
-				// Index = 15
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.logorReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: daa62c4f
 					SupportedInterfaceListBeginIndex = 33,
 					NumberOfSupportedInterface = 3,
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 16
+				// Index = 15
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.personReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 36dad3ba
 					SupportedInterfaceListBeginIndex = 33,
@@ -16305,7 +16297,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 17
+				// Index = 16
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salComment, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 8a580175
 					SupportedInterfaceListBeginIndex = 33,
@@ -16313,7 +16305,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 18
+				// Index = 17
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salComment+salComment_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
 								"l")), // hashcode: 4f305843
@@ -16322,7 +16314,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 19
+				// Index = 18
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salComment+salComment_obj10_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
 								"ll")), // hashcode: a0998479
@@ -16331,7 +16323,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 20
+				// Index = 19
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salComment+salComment_obj11_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
 								"ll")), // hashcode: ed4dcdb0
@@ -16340,7 +16332,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 21
+				// Index = 20
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salMore, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: e106de67
 					SupportedInterfaceListBeginIndex = 33,
@@ -16348,7 +16340,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 22
+				// Index = 21
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.saloonRegister, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: a5b57644
 					SupportedInterfaceListBeginIndex = 33,
@@ -16356,7 +16348,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 23
+				// Index = 22
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salProfile, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 83b06b99
 					SupportedInterfaceListBeginIndex = 33,
@@ -16364,7 +16356,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 24
+				// Index = 23
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salSearch, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: c2d2d047
 					SupportedInterfaceListBeginIndex = 8,
@@ -16372,7 +16364,7 @@ namespace McgInterop
 					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
-				// Index = 25
+				// Index = 24
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salSearch+salSearch_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 97577249
 					SupportedInterfaceListBeginIndex = 36,
@@ -16380,12 +16372,20 @@ namespace McgInterop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 26
+				// Index = 25
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.salSearch+salSearch_obj6_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: acfa3048
 					SupportedInterfaceListBeginIndex = 37,
 					NumberOfSupportedInterface = 2,
 					ParentCCWTemplateIndex = -1,
+					IsWinRTType = false,
+				}, 
+				// Index = 26
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Pages.updatePassword, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")), // hashcode: 8854b0db
+					SupportedInterfaceListBeginIndex = 33,
+					NumberOfSupportedInterface = 3,
+					ParentCCWTemplateIndex = 6,
 					IsWinRTType = false,
 				}, 
 				// Index = 27
@@ -16555,28 +16555,28 @@ namespace McgInterop
 				}, 
 				// Index = 45
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.MemoryStream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")), // hashcode: a87b3071
-					SupportedInterfaceListBeginIndex = 7,
-					NumberOfSupportedInterface = 0,
-					FixupBaseType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.Stream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					ParentCCWTemplateIndex = -1,
-					IsWinRTType = false,
-				}, 
-				// Index = 46
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")), // hashcode: bda31a2a
 					SupportedInterfaceListBeginIndex = 60,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 47
+				// Index = 46
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
 								"cKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
 								"50a3a")), // hashcode: 03ec4f68
 					SupportedInterfaceListBeginIndex = 64,
 					NumberOfSupportedInterface = 5,
+					ParentCCWTemplateIndex = -1,
+					IsWinRTType = false,
+				}, 
+				// Index = 47
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.MemoryStream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")), // hashcode: a87b3071
+					SupportedInterfaceListBeginIndex = 7,
+					NumberOfSupportedInterface = 0,
+					FixupBaseType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.IO.Stream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
@@ -22962,22 +22962,22 @@ namespace McgInterop
 				"tType=WindowsRuntime")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(288, "Truudus.Truudus_XamlTypeInfo.XamlMember, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(312, "Truudus.Pages.commonRegister, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(336, "Truudus.Pages.editUserPassword, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(360, "Truudus.Pages.logorReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(384, "Truudus.Pages.personReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(408, "Truudus.Pages.salComment, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(432, "Truudus.Pages.salComment+salComment_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(336, "Truudus.Pages.logorReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(360, "Truudus.Pages.personReg, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(384, "Truudus.Pages.salComment, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(408, "Truudus.Pages.salComment+salComment_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
 				"l")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(456, "Truudus.Pages.salComment+salComment_obj10_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(432, "Truudus.Pages.salComment+salComment_obj10_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
 				"ll")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(480, "Truudus.Pages.salComment+salComment_obj11_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(456, "Truudus.Pages.salComment+salComment_obj11_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
 				"ll")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(504, "Truudus.Pages.salMore, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(528, "Truudus.Pages.saloonRegister, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(552, "Truudus.Pages.salProfile, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(576, "Truudus.Pages.salSearch, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(600, "Truudus.Pages.salSearch+salSearch_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(624, "Truudus.Pages.salSearch+salSearch_obj6_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(480, "Truudus.Pages.salMore, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(504, "Truudus.Pages.saloonRegister, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(528, "Truudus.Pages.salProfile, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(552, "Truudus.Pages.salSearch, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(576, "Truudus.Pages.salSearch+salSearch_obj1_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(600, "Truudus.Pages.salSearch+salSearch_obj6_Bindings, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(624, "Truudus.Pages.updatePassword, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(648, "Truudus.Pages.userProfile, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(672, "System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKey" +
 				"Token=b03f5f7f11d50a3a")]
@@ -23017,12 +23017,12 @@ namespace McgInterop
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(1032, "System.Xml.XmlLinkedNode, System.Xml.XmlDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50" +
 				"a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(1056, @"System.Collections.Generic.Dictionary`2[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1080, "System.IO.MemoryStream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1084, "System.IO.Stream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1104, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(1128, "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1080, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1104, "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
 				"cKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
 				"50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1128, "System.IO.MemoryStream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(1132, "System.IO.Stream, System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(1152, "System.Net.Http.Headers.HttpContentHeaders, System.Net.Http, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b0" +
 				"3f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(1176, "System.Net.Http.Headers.HttpHeaders, System.Net.Http, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f1" +
@@ -23121,13 +23121,13 @@ namespace McgInterop
 					0, 0, 0x7, 0x0, 0x0, 0x0, 0xA, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x8, 0x0, 0x0, 0x0, 0xC, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0x9, 0x0, 0x0, 0x0, 0xD, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA, 0x0, 0x0, 0x0, 0x13, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xB, 0x0, 
 					0x0, 0x0, 0x19, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x1E, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
-					0x20, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x8, 0x0, 
-					0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 
-					0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x0, 0x0, 0x0, 0x1, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 
+					0x20, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 
+					0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 
+					0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 
 					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x25, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0x6, 0x0, 0x0, 0x0, 0x21, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x27, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0x1C, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1F, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x27, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x21, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -23136,8 +23136,8 @@ namespace McgInterop
 					0x29, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x27, 0x0, 0x0, 0x0, 0x30, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x34, 0x0, 
 					0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x29, 0x0, 0x0, 0x0, 0x30, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x34, 0x0, 0x0, 0x0, 
 					0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2B, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x22, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x38, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
-					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3C, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x38, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x3C, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 
+					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x31, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x45, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0x33, 0x0, 0x0, 0x0, 0x28, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x28, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x28, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1F, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 

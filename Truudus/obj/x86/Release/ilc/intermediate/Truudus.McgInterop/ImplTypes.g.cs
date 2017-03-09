@@ -39812,6 +39812,30 @@ namespace Windows.UI.Xaml
 				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 			}
 
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static double get_MinWidth(global::System.__ComObject __this)
+			{
+				double __ret = global::McgInterop.ForwardComSharedStubs.Func_double__<global::Windows.UI.Xaml.IFrameworkElement>(
+									__this, 
+									global::Windows.UI.Xaml.IFrameworkElement__Impl.Vtbl.idx_get_MinWidth
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static void put_MinWidth(
+						global::System.__ComObject __this, 
+						double value)
+			{
+				global::McgInterop.ForwardComSharedStubs.Proc_double__<global::Windows.UI.Xaml.IFrameworkElement>(
+									__this, 
+									value, 
+									global::Windows.UI.Xaml.IFrameworkElement__Impl.Vtbl.idx_put_MinWidth
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+
 			// Signature, Windows.UI.Xaml.IFrameworkElement.get_HorizontalAlignment, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.EnumMarshaller] Windows_UI_Xaml_HorizontalAlignment__Windows_UI_Xaml__HorizontalAlignment, 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			public static global::Windows.UI.Xaml.HorizontalAlignment get_HorizontalAlignment(global::System.__ComObject __this)
@@ -40127,6 +40151,26 @@ namespace Windows.UI.Xaml
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.UI.Xaml.IFrameworkElement.MinWidth")]
+			double global::Windows.UI.Xaml.IFrameworkElement.get_MinWidth()
+			{
+				double __retVal = global::Windows.UI.Xaml.IFrameworkElement__Impl.StubClass.get_MinWidth(this);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.UI.Xaml.IFrameworkElement.MinWidth")]
+			void global::Windows.UI.Xaml.IFrameworkElement.put_MinWidth(double value)
+			{
+				global::Windows.UI.Xaml.IFrameworkElement__Impl.StubClass.put_MinWidth(
+									this, 
+									value
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.UI.Xaml.IFrameworkElement.HorizontalAlignment")]
 			global::Windows.UI.Xaml.HorizontalAlignment global::Windows.UI.Xaml.IFrameworkElement.get_HorizontalAlignment()
 			{
@@ -40316,6 +40360,8 @@ namespace Windows.UI.Xaml
 			internal const int idx_put_Width = 16;
 			internal const int idx_get_Height = 17;
 			internal const int idx_put_Height = 18;
+			internal const int idx_get_MinWidth = 19;
+			internal const int idx_put_MinWidth = 20;
 			internal const int idx_get_HorizontalAlignment = 27;
 			internal const int idx_put_HorizontalAlignment = 28;
 			internal const int idx_get_VerticalAlignment = 29;
@@ -46318,6 +46364,19 @@ namespace Windows.UI.Xaml.Controls
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static void put_Password(
+						global::System.__ComObject __this, 
+						string value)
+			{
+				global::McgInterop.ForwardComSharedStubs.Proc_string__<global::Windows.UI.Xaml.Controls.IPasswordBox>(
+									__this, 
+									value, 
+									global::Windows.UI.Xaml.Controls.IPasswordBox__Impl.Vtbl.idx_put_Password
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_PasswordChanged(
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.RoutedEventHandler value)
@@ -46386,6 +46445,17 @@ namespace Windows.UI.Xaml.Controls
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.UI.Xaml.Controls.IPasswordBox.Password")]
+			void global::Windows.UI.Xaml.Controls.IPasswordBox.put_Password(string value)
+			{
+				global::Windows.UI.Xaml.Controls.IPasswordBox__Impl.StubClass.put_Password(
+									this, 
+									value
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Windows.UI.Xaml.Controls.IPasswordBox.PasswordChanged")]
 			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken global::Windows.UI.Xaml.Controls.IPasswordBox.add_PasswordChanged(global::Windows.UI.Xaml.RoutedEventHandler value)
 			{
@@ -46437,6 +46507,7 @@ namespace Windows.UI.Xaml.Controls
 		public unsafe partial struct Vtbl
 		{
 			internal const int idx_get_Password = 6;
+			internal const int idx_put_Password = 7;
 			internal const int idx_add_PasswordChanged = 14;
 			internal const int idx_remove_PasswordChanged = 15;
 			internal const int idx_add_ContextMenuOpening = 16;

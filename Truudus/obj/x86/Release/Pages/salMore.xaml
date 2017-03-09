@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="LightBlue">
+    <Grid Background="White">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -40,8 +40,8 @@
                    FontFamily="Default" FontSize="20"/>
 
         <Button x:ConnectionId='5' x:Name="editButton" Style="{StaticResource buttonStyle}"
-                Grid.Row="3" Content="" Background="DarkBlue"
-                Foreground="White"/>
+                Grid.Row="3" Content="" Background="Teal"
+                Foreground="White"                         />
     </Grid>
 </Page>
 

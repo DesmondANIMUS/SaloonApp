@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>BBCE7018A029C76CEB5727A80B513A5FD73F198CF218F923ACC07391DDC3DD54</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>47FEBAD1445545179D12BAEF194A0CFCACDEC1B8008B4D7579D8D81A4391A59D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1be388cc-5956-47f9-8bef-402d430f0b36_1.0.0.0_x86__bxyw9yvdx9jaw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1be388cc-5956-47f9-8bef-402d430f0b36_bxyw9yvdx9jaw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1be388cc-5956-47f9-8bef-402d430f0b36</RegisteredPackageID>
@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-05T17:46:20.561</Modified>
+      <Modified>2017-03-09T17:49:08.761</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -89,19 +89,19 @@
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-05T17:45:07.549</Modified>
+      <Modified>2017-03-09T17:38:08.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.dll">
       <PackagePath>Truudus.dll</PackagePath>
-      <Modified>2017-03-05T17:46:20.071</Modified>
+      <Modified>2017-03-09T17:49:08.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.exe">
       <PackagePath>Truudus.exe</PackagePath>
-      <Modified>2017-03-05T17:46:20.519</Modified>
+      <Modified>2017-03-09T17:49:08.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Release\ilc\Truudus.pdb">
       <PackagePath>Truudus.pdb</PackagePath>
-      <Modified>2017-03-05T17:46:20.508</Modified>
+      <Modified>2017-03-09T17:49:08.722</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

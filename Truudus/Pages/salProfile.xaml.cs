@@ -27,7 +27,6 @@ namespace Truudus.Pages
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-
             proRing.Visibility = Visibility.Visible;
             proRing.IsActive = true;
 
@@ -38,7 +37,7 @@ namespace Truudus.Pages
             //userPic.Visibility = Visibility.Collapsed;
             //searchButton.Visibility = Visibility.Collapsed;
             //moreButton.Visibility = Visibility.Collapsed;
-            //commentButton.Visibility = Visibility.Collapsed;            
+            //commentButton.Visibility = Visibility.Collapsed;                        
 
             try
             {                
@@ -84,7 +83,7 @@ namespace Truudus.Pages
         {
             if (searchSalListItem.IsSelected) { Frame.Navigate(typeof(salSearch)); }
             else if (logoutListItem.IsSelected) { await LogOutActionAsync(); }
-            else if (commentsSalListItem.IsSelected) { Frame.Navigate(typeof(salComment)); }
+            else if (commentsSalListItem.IsSelected) { Frame.Navigate(typeof(salComment), log); }
             else if (aboutSalItem.IsSelected) { Frame.Navigate(typeof(salMore), data); }
         }
 

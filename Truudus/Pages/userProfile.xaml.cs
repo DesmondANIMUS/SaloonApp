@@ -74,7 +74,7 @@ namespace Truudus.Pages
         {
             if (searchSalListItem.IsSelected) { Frame.Navigate(typeof(salSearch)); }
             else if (logoutListItem.IsSelected) { await LogOutActionAsync(); }            
-            //else if (editPassItem.IsSelected) { Frame.Navigate(typeof(editUserPassword), log); }
+            else if (editPassItem.IsSelected) { Frame.Navigate(typeof(updatePassword), log); }
         }
 
         private async Task LogOutActionAsync()

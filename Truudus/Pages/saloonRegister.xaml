@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="LightBlue">
+    <Grid Background="White">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -54,7 +54,7 @@
 
         <Button x:Name="submit" Style="{StaticResource buttonStyle}"
                 Margin="55,50,55,50" FontFamily="Default"
-                Grid.ColumnSpan="2" Background="DarkBlue"
+                Grid.ColumnSpan="2" Background="Teal"
                 Foreground="White" FontSize="30"
                 Content="Submit" Click="submit_Click"
                 Grid.Row="4" />

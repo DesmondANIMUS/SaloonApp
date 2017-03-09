@@ -29,7 +29,7 @@ namespace System.Runtime.Serialization.Generated
         static int[] s_knownContractsLists = new int[] {
               -1, }
         ;
-        // Count = 215
+        // Count = 218
         static int[] s_xmlDictionaryStrings = new int[] {
                 0, // array length: 0
                 1, // array length: 1
@@ -65,7 +65,8 @@ namespace System.Runtime.Serialization.Generated
                 651, // index: 651, string: "response"
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
-                11, // array length: 11
+                12, // array length: 12
+                -1, // string: null
                 -1, // string: null
                 -1, // string: null
                 -1, // string: null
@@ -79,7 +80,7 @@ namespace System.Runtime.Serialization.Generated
                 -1, // string: null
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
-                11, // array length: 11
+                12, // array length: 12
                 695, // index: 695, string: "City"
                 700, // index: 700, string: "Email"
                 668, // index: 668, string: "EndUsername"
@@ -91,7 +92,9 @@ namespace System.Runtime.Serialization.Generated
                 742, // index: 742, string: "ShortDesc"
                 752, // index: 752, string: "State"
                 758, // index: 758, string: "Status"
-                11, // array length: 11
+                765, // index: 765, string: "Username"
+                12, // array length: 12
+                272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -109,8 +112,8 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 2, // array length: 2
-                765, // index: 765, string: "results"
-                773, // index: 773, string: "status"
+                774, // index: 774, string: "results"
+                782, // index: 782, string: "status"
                 2, // array length: 2
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -123,11 +126,11 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 5, // array length: 5
-                780, // index: 780, string: "address_components"
-                799, // index: 799, string: "formatted_address"
-                817, // index: 817, string: "geometry"
-                826, // index: 826, string: "place_id"
-                835, // index: 835, string: "types"
+                789, // index: 789, string: "address_components"
+                808, // index: 808, string: "formatted_address"
+                826, // index: 826, string: "geometry"
+                835, // index: 835, string: "place_id"
+                844, // index: 844, string: "types"
                 5, // array length: 5
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -141,9 +144,9 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 3, // array length: 3
-                841, // index: 841, string: "long_name"
-                851, // index: 851, string: "short_name"
-                835, // index: 835, string: "types"
+                850, // index: 850, string: "long_name"
+                860, // index: 860, string: "short_name"
+                844, // index: 844, string: "types"
                 3, // array length: 3
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -155,9 +158,9 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 3, // array length: 3
-                862, // index: 862, string: "location"
-                871, // index: 871, string: "location_type"
-                885, // index: 885, string: "viewport"
+                871, // index: 871, string: "location"
+                880, // index: 880, string: "location_type"
+                894, // index: 894, string: "viewport"
                 3, // array length: 3
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -168,8 +171,8 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 2, // array length: 2
-                894, // index: 894, string: "lat"
-                898, // index: 898, string: "lng"
+                903, // index: 903, string: "lat"
+                907, // index: 907, string: "lng"
                 2, // array length: 2
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -179,8 +182,8 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 2, // array length: 2
-                902, // index: 902, string: "northeast"
-                912, // index: 912, string: "southwest"
+                911, // index: 911, string: "northeast"
+                921, // index: 921, string: "southwest"
                 2, // array length: 2
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -190,8 +193,8 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 2, // array length: 2
-                894, // index: 894, string: "lat"
-                898, // index: 898, string: "lng"
+                903, // index: 903, string: "lat"
+                907, // index: 907, string: "lng"
                 2, // array length: 2
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -201,8 +204,8 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 2, // array length: 2
-                894, // index: 894, string: "lat"
-                898, // index: 898, string: "lng"
+                903, // index: 903, string: "lat"
+                907, // index: 907, string: "lng"
                 2, // array length: 2
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -211,7 +214,7 @@ namespace System.Runtime.Serialization.Generated
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 1, // array length: 1
-                922, // index: 922, string: "SearchResults"
+                931, // index: 931, string: "SearchResults"
                 1, // array length: 1
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 9, // array length: 9
@@ -235,7 +238,7 @@ namespace System.Runtime.Serialization.Generated
                 742, // index: 742, string: "ShortDesc"
                 752, // index: 752, string: "State"
                 758, // index: 758, string: "Status"
-                936, // index: 936, string: "Username"
+                765, // index: 765, string: "Username"
                 9, // array length: 9
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
                 272, // index: 272, string: "http://schemas.datacontract.org/2004/07/Truudus.Models"
@@ -911,9 +914,9 @@ namespace System.Runtime.Serialization.Generated
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.CommonUserResponse, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
                     ChildElementNamespacesListIndex = 34,
-                    ContractNamespacesListIndex = 46,
-                    MemberNamesListIndex = 48,
-                    MemberNamespacesListIndex = 60,
+                    ContractNamespacesListIndex = 47,
+                    MemberNamesListIndex = 49,
+                    MemberNamespacesListIndex = 62,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -927,10 +930,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.GoogleRevGeoResponse, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.GoogleRevGeoResponse, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 72,
-                    ContractNamespacesListIndex = 75,
-                    MemberNamesListIndex = 77,
-                    MemberNamespacesListIndex = 80,
+                    ChildElementNamespacesListIndex = 75,
+                    ContractNamespacesListIndex = 78,
+                    MemberNamesListIndex = 80,
+                    MemberNamespacesListIndex = 83,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -944,10 +947,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Result, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Result, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 83,
-                    ContractNamespacesListIndex = 89,
-                    MemberNamesListIndex = 91,
-                    MemberNamespacesListIndex = 97,
+                    ChildElementNamespacesListIndex = 86,
+                    ContractNamespacesListIndex = 92,
+                    MemberNamesListIndex = 94,
+                    MemberNamespacesListIndex = 100,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -961,10 +964,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.AddressComponent, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.AddressComponent, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 103,
-                    ContractNamespacesListIndex = 107,
-                    MemberNamesListIndex = 109,
-                    MemberNamespacesListIndex = 113,
+                    ChildElementNamespacesListIndex = 106,
+                    ContractNamespacesListIndex = 110,
+                    MemberNamesListIndex = 112,
+                    MemberNamespacesListIndex = 116,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -978,10 +981,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Geometry, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Geometry, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 117,
-                    ContractNamespacesListIndex = 121,
-                    MemberNamesListIndex = 123,
-                    MemberNamespacesListIndex = 127,
+                    ChildElementNamespacesListIndex = 120,
+                    ContractNamespacesListIndex = 124,
+                    MemberNamesListIndex = 126,
+                    MemberNamespacesListIndex = 130,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -995,10 +998,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Location, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Location, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 131,
-                    ContractNamespacesListIndex = 134,
-                    MemberNamesListIndex = 136,
-                    MemberNamespacesListIndex = 139,
+                    ChildElementNamespacesListIndex = 134,
+                    ContractNamespacesListIndex = 137,
+                    MemberNamesListIndex = 139,
+                    MemberNamespacesListIndex = 142,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -1012,10 +1015,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Viewport, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Viewport, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 142,
-                    ContractNamespacesListIndex = 145,
-                    MemberNamesListIndex = 147,
-                    MemberNamespacesListIndex = 150,
+                    ChildElementNamespacesListIndex = 145,
+                    ContractNamespacesListIndex = 148,
+                    MemberNamesListIndex = 150,
+                    MemberNamespacesListIndex = 153,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -1029,10 +1032,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Northeast, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Northeast, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 153,
-                    ContractNamespacesListIndex = 156,
-                    MemberNamesListIndex = 158,
-                    MemberNamespacesListIndex = 161,
+                    ChildElementNamespacesListIndex = 156,
+                    ContractNamespacesListIndex = 159,
+                    MemberNamesListIndex = 161,
+                    MemberNamespacesListIndex = 164,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -1046,10 +1049,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Southwest, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.Southwest, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 164,
-                    ContractNamespacesListIndex = 167,
-                    MemberNamesListIndex = 169,
-                    MemberNamespacesListIndex = 172,
+                    ChildElementNamespacesListIndex = 167,
+                    ContractNamespacesListIndex = 170,
+                    MemberNamesListIndex = 172,
+                    MemberNamespacesListIndex = 175,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -1063,10 +1066,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.SaloonResponse, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.SaloonResponse, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 175,
-                    ContractNamespacesListIndex = 177,
-                    MemberNamesListIndex = 179,
-                    MemberNamespacesListIndex = 181,
+                    ChildElementNamespacesListIndex = 178,
+                    ContractNamespacesListIndex = 180,
+                    MemberNamesListIndex = 182,
+                    MemberNamespacesListIndex = 184,
                 }, 
                 new global::ClassDataContractEntry() {
                     Common = new global::CommonContractEntry() {
@@ -1080,10 +1083,10 @@ namespace System.Runtime.Serialization.Generated
                         OriginalUnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.SearchResult, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                         UnderlyingType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Truudus.Models.SearchResult, Truudus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")),
                     },
-                    ChildElementNamespacesListIndex = 183,
-                    ContractNamespacesListIndex = 193,
-                    MemberNamesListIndex = 195,
-                    MemberNamespacesListIndex = 205,
+                    ChildElementNamespacesListIndex = 186,
+                    ContractNamespacesListIndex = 196,
+                    MemberNamesListIndex = 198,
+                    MemberNamespacesListIndex = 208,
                 }
         };
         static readonly byte[] s_collectionDataContracts_Hashtable = null;
@@ -1378,12 +1381,12 @@ namespace System.Runtime.Serialization.Generated
             'C','o','m','m','e','n','t','\0','E','n','d','U','s','e','r','n','a','m','e','\0','S','a','l','o','n','N','a','m','e','\0',
             'S','t','a','r','\0','C','i','t','y','\0','E','m','a','i','l','\0','F','i','r','s','t','N','a','m','e','\0','L','a','s','t',
             'N','a','m','e','\0','P','a','s','s','w','o','r','d','\0','P','i','n','C','o','d','e','\0','S','h','o','r','t','D','e','s',
-            'c','\0','S','t','a','t','e','\0','S','t','a','t','u','s','\0','r','e','s','u','l','t','s','\0','s','t','a','t','u','s','\0',
-            'a','d','d','r','e','s','s','_','c','o','m','p','o','n','e','n','t','s','\0','f','o','r','m','a','t','t','e','d','_','a',
-            'd','d','r','e','s','s','\0','g','e','o','m','e','t','r','y','\0','p','l','a','c','e','_','i','d','\0','t','y','p','e','s',
-            '\0','l','o','n','g','_','n','a','m','e','\0','s','h','o','r','t','_','n','a','m','e','\0','l','o','c','a','t','i','o','n',
-            '\0','l','o','c','a','t','i','o','n','_','t','y','p','e','\0','v','i','e','w','p','o','r','t','\0','l','a','t','\0','l','n',
-            'g','\0','n','o','r','t','h','e','a','s','t','\0','s','o','u','t','h','w','e','s','t','\0','S','e','a','r','c','h','R','e',
-            's','u','l','t','s','\0','U','s','e','r','n','a','m','e','\0'};
+            'c','\0','S','t','a','t','e','\0','S','t','a','t','u','s','\0','U','s','e','r','n','a','m','e','\0','r','e','s','u','l','t',
+            's','\0','s','t','a','t','u','s','\0','a','d','d','r','e','s','s','_','c','o','m','p','o','n','e','n','t','s','\0','f','o',
+            'r','m','a','t','t','e','d','_','a','d','d','r','e','s','s','\0','g','e','o','m','e','t','r','y','\0','p','l','a','c','e',
+            '_','i','d','\0','t','y','p','e','s','\0','l','o','n','g','_','n','a','m','e','\0','s','h','o','r','t','_','n','a','m','e',
+            '\0','l','o','c','a','t','i','o','n','\0','l','o','c','a','t','i','o','n','_','t','y','p','e','\0','v','i','e','w','p','o',
+            'r','t','\0','l','a','t','\0','l','n','g','\0','n','o','r','t','h','e','a','s','t','\0','s','o','u','t','h','w','e','s','t',
+            '\0','S','e','a','r','c','h','R','e','s','u','l','t','s','\0'};
     }
 }
