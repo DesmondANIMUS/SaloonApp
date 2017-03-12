@@ -85,7 +85,7 @@
         <Button x:ConnectionId='12' x:Name="otpbutton" Grid.Row="3" Content="Submit"
                 Grid.ColumnSpan="2" Margin="100,0,100,0"
                 HorizontalAlignment="Stretch" FontSize="25"
-                Background="DarkBlue" Foreground="White"
+                Background="Teal" Foreground="White"
                                         Visibility="Collapsed"/>
 
     </Grid>

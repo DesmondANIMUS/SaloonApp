@@ -132,7 +132,7 @@ namespace Truudus.Truudus_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "Truudus.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -144,9 +144,10 @@ namespace Truudus.Truudus_XamlTypeInfo
             _typeNameTable[8] = "Truudus.Pages.saloonRegister";
             _typeNameTable[9] = "Truudus.Pages.salProfile";
             _typeNameTable[10] = "Truudus.Pages.salSearch";
-            _typeNameTable[11] = "Truudus.Pages.userProfile";
+            _typeNameTable[11] = "Truudus.Pages.updatePassword";
+            _typeNameTable[12] = "Truudus.Pages.userProfile";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::Truudus.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -158,7 +159,8 @@ namespace Truudus.Truudus_XamlTypeInfo
             _typeTable[8] = typeof(global::Truudus.Pages.saloonRegister);
             _typeTable[9] = typeof(global::Truudus.Pages.salProfile);
             _typeTable[10] = typeof(global::Truudus.Pages.salSearch);
-            _typeTable[11] = typeof(global::Truudus.Pages.userProfile);
+            _typeTable[11] = typeof(global::Truudus.Pages.updatePassword);
+            _typeTable[12] = typeof(global::Truudus.Pages.userProfile);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,7 +204,8 @@ namespace Truudus.Truudus_XamlTypeInfo
         private object Activate_8_saloonRegister() { return new global::Truudus.Pages.saloonRegister(); }
         private object Activate_9_salProfile() { return new global::Truudus.Pages.salProfile(); }
         private object Activate_10_salSearch() { return new global::Truudus.Pages.salSearch(); }
-        private object Activate_11_userProfile() { return new global::Truudus.Pages.userProfile(); }
+        private object Activate_11_updatePassword() { return new global::Truudus.Pages.updatePassword(); }
+        private object Activate_12_userProfile() { return new global::Truudus.Pages.userProfile(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -285,9 +288,16 @@ namespace Truudus.Truudus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Truudus.Pages.userProfile
+            case 11:   //  Truudus.Pages.updatePassword
                 userType = new global::Truudus.Truudus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_userProfile;
+                userType.Activator = Activate_11_updatePassword;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Truudus.Pages.userProfile
+                userType = new global::Truudus.Truudus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_userProfile;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

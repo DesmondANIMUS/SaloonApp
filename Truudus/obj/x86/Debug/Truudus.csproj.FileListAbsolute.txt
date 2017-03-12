@@ -1313,3 +1313,8 @@ Z:\Personal\VS Projects Backup\VS 2017\Projects\Universal\Truudus\Truudus\obj\x8
 Z:\Personal\VS Projects Backup\VS 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\qualifiers.txt.intermediate
 Z:\Personal\VS Projects Backup\VS 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 Z:\Personal\VS Projects Backup\VS 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\Pages\updatePassword.g.i.cs
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\Pages\updatePassword.g.cs
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\Pages\updatePassword.xaml
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\obj\x86\Debug\Pages\updatePassword.xbf
+C:\Users\Desmond\Documents\Visual Studio 2017\Projects\Universal\Truudus\Truudus\bin\x86\Debug\Pages\updatePassword.xbf

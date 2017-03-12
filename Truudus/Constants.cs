@@ -3,13 +3,13 @@
     class Constants
     {
         #region bases
-        private const string baseUrl                = "http://localhost:5000/";
+        private const string baseUrl                = "<replace with actual value from environment variables TPATH>";
         private const string geobase                = "https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key=";
 
-        private const string privateKey             = "h8mDq5YIF1SWNHkArGmw";
-        private const string publicKey              = "rQ9P5YLnqt8JEmarbyoo";
+        private const string privateKey             = "<replace with actual value from environment variables TPRIVKEY>";
+        private const string publicKey              = "<replace with actual value from environment variables TPUBKEY>";
 
-        private const string apiKey                 = "AIzaSyBu5-1WPBPeyqEPCdG7EBnAxJR4n8HqiGM";
+        private const string apiKey                 = "<replace with actual value from environment variables APIKEY>";
         private const int otplim                    = 6;
         #endregion
 

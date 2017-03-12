@@ -31,8 +31,12 @@ namespace Truudus.Pages
         {
             var keepTemp = Windows.Storage.ApplicationData.Current.LocalSettings;
             
-            com.Username = (string)keepTemp.Values["user"];            
+            com.Username = (string)keepTemp.Values["user"];
+            var salExist = (string)keepTemp.Values["type"];
             com.Salonname = salProfile.data.SalonName;            
+
+            if (salExist.Equals("Saloon"))
+                giveStar.Visibility = Visibility.Collapsed;
 
             try
             {                
@@ -91,11 +95,6 @@ namespace Truudus.Pages
             starList.Visibility = Visibility.Visible;
             commentsList.Visibility = Visibility.Visible;
             giveStar.Visibility = Visibility.Visible;
-
-            if (logorReg.intent == true)
-                starField.Visibility = Visibility.Collapsed;
-            else
-                starField.Visibility = Visibility.Visible;
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
